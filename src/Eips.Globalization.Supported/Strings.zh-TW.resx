@@ -103,4 +103,151 @@
   <data name="ArgumentException_empty_or_whitespace" xml:space="preserve">
     <value>參數 “{0}” 不能為 null 或者空白。</value>
   </data>
+  <data name="Ok" xml:space="preserve">
+    <value>好的</value>
+  </data>
+  <data name="Sure" xml:space="preserve">
+    <value>當然</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>確認</value>
+  </data>
+  <data name="Done" xml:space="preserve">
+    <value>完畢</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Completed" xml:space="preserve">
+    <value>完成了</value>
+  </data>
+  <data name="Accept" xml:space="preserve">
+    <value>接受</value>
+  </data>
+  <data name="Reject" xml:space="preserve">
+    <value>拒絕</value>
+  </data>
+  <data name="Debug" xml:space="preserve">
+    <value>調試</value>
+  </data>
+  <data name="Trace" xml:space="preserve">
+    <value>追踪</value>
+  </data>
+  <data name="Tips" xml:space="preserve">
+    <value>提示</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>信息</value>
+  </data>
+  <data name="Ask" xml:space="preserve">
+    <value>詢問</value>
+  </data>
+  <data name="No_Thanks" xml:space="preserve">
+    <value>不了，謝謝</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>警告</value>
+  </data>
+  <data name="Mistake" xml:space="preserve">
+    <value>錯誤</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>錯誤</value>
+  </data>
+  <data name="Exception" xml:space="preserve">
+    <value>異常</value>
+  </data>
+  <data name="Dangerous" xml:space="preserve">
+    <value>危險的</value>
+  </data>
+  <data name="Fatal" xml:space="preserve">
+    <value>致命的</value>
+  </data>
+  <data name="Success" xml:space="preserve">
+    <value>成功</value>
+  </data>
+  <data name="Failure" xml:space="preserve">
+    <value>失敗</value>
+  </data>
+  <data name="File" xml:space="preserve">
+    <value>文件</value>
+  </data>
+  <data name="New" xml:space="preserve">
+    <value>新建</value>
+  </data>
+  <data name="Create_New" xml:space="preserve">
+    <value>創建</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="Save_As" xml:space="preserve">
+    <value>另存為</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>打開</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>關閉</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>徹底刪除</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>刪除</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>是的</value>
+  </data>
+  <data name="Continue" xml:space="preserve">
+    <value>繼續</value>
+  </data>
+  <data name="Abort" xml:space="preserve">
+    <value>中止</value>
+  </data>
+  <data name="Get_Started" xml:space="preserve">
+    <value>開始</value>
+  </data>
+  <data name="Start" xml:space="preserve">
+    <value>啟動</value>
+  </data>
+  <data name="Pause" xml:space="preserve">
+    <value>暫停</value>
+  </data>
+  <data name="Stop" xml:space="preserve">
+    <value>停止</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>退出</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>返回</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>編輯</value>
+  </data>
+  <data name="Give_Up" xml:space="preserve">
+    <value>放棄</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>提交</value>
+  </data>
+  <data name="Check_Out" xml:space="preserve">
+    <value>查看</value>
+  </data>
+  <data name="Sign_In" xml:space="preserve">
+    <value>登錄</value>
+  </data>
+  <data name="Sign_Up" xml:space="preserve">
+    <value>註冊</value>
+  </data>
+  <data name="Sign_Out" xml:space="preserve">
+    <value>註銷</value>
+  </data>
+  <data name="Import" xml:space="preserve">
+    <value>導入</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>導出</value>
+  </data>
 </root>
