@@ -1,0 +1,25 @@
+{
+  "name": "@niacomsoft/eips.runtime",
+  "version": "1.0.0-build.0",
+  "description": "基于 .NET 的 “企业私有 SaaS 服务” 运行时。",
+  "main": "index.js",
+  "repository": "https://github.com/eips-solution/runtime",
+  "author": "王 玉才 <netowls-studio@outlook.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "standard-version": "^9.5.0"
+  },
+  "scripts": {
+    "release:build-dryrun": "standard-version -p build -i CHANGELOG.md --dry-run",
+    "release:build": "standard-version -p build -i CHANGELOG.md",
+    "release:alpha-dryrun": "standard-version -p alpha -i CHANGELOG.md --dry-run",
+    "release:alpha": "standard-version -p alpha -i CHANGELOG.md",
+    "release:beta-dryrun": "standard-version -p beta -i CHANGELOG.md --dry-run",
+    "release:beta": "standard-version -p beta -i CHANGELOG.md",
+    "release:preview-dryrun": "standard-version -p preview -i CHANGELOG.md --dry-run",
+    "release:preview": "standard-version -p preview -i CHANGELOG.md",
+    "release:release-dryrun": "standard-version -i CHANGELOG.md --dry-run",
+    "release:release": "standard-version -i CHANGELOG.md"
+  }
+}
