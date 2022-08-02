@@ -16,13 +16,13 @@ namespace Niacomsoft.Eips.Diagnostics
         /// <returns> 统一诊断信息前缀。 </returns>
         protected virtual string GetUniversalMessagePrefix()
         {
-            if (Target is null && string.IsNullOrWhiteSpace(MethodName))
+            if (ReferenceTypeEqualityComparer.None(Target) && string.IsNullOrWhiteSpace(MethodName))
                 return string.Empty;
             var prefixBuilder = new StringBuilder();
             if (!(Target is null))
                 prefixBuilder.Append($"类型 “{Target.FullName}”");
             if (!string.IsNullOrWhiteSpace(MethodName))
-                prefixBuilder.Append($"{(Target is null ? string.Empty : " 的方法 ")}“{MethodName}”：");
+                prefixBuilder.Append($"{(ReferenceTypeEqualityComparer.None(Target) ? string.Empty : " 的方法 ")}“{MethodName}”：");
             return prefixBuilder.ToString();
         }
 
