@@ -1,7 +1,7 @@
 # Application Blocks Description
 
 - 解决方案
-  - 名称：`EnterpriseInPrivateSaaS`
+  - 名称：`Eips.Runtime`
 - 全球化支持
   - 项目名称：`Eips.Globalization.Supported`
   - 程序集名称：`Niacomsoft.Eips.Globalization.Supported`
