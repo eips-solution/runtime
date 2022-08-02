@@ -12,3 +12,4 @@ using System.Diagnostics.CodeAnalysis;
 
 [assembly: SuppressMessage("Design", "Ex0100:Member may throw undocumented exception", Justification = "<挂起>", Scope = "member", Target = "~M:Niacomsoft.Eips.Diagnostics.TraceInformation.#ctor(System.Type,System.String,System.String)")]
 [assembly: SuppressMessage("Design", "Ex0100:Member may throw undocumented exception", Justification = "<挂起>", Scope = "member", Target = "~M:Niacomsoft.Eips.Diagnostics.TraceInformation.ToString(System.Object[])~System.String")]
+[assembly: SuppressMessage("Roslynator", "RCS1194:Implement exception constructors.", Justification = "<挂起>", Scope = "type", Target = "~T:Niacomsoft.Eips.DynamicCreateObjectInstanceException")]

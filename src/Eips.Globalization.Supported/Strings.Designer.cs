@@ -205,6 +205,15 @@ namespace Niacomsoft.Eips.Globalization.Resources {
         }
         
         /// <summary>
+        ///   查找类似 尝试创建 “{0}” 类型对象实例时，引发了异常。 的本地化字符串。
+        /// </summary>
+        internal static string DynamicCreateObjectInstanceException_default_message {
+            get {
+                return ResourceManager.GetString("DynamicCreateObjectInstanceException_default_message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 编辑 的本地化字符串。
         /// </summary>
         internal static string Edit {

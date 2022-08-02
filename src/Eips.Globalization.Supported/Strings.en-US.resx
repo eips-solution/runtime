@@ -250,4 +250,7 @@
   <data name="Export" xml:space="preserve">
     <value>Export</value>
   </data>
+  <data name="DynamicCreateObjectInstanceException_default_message" xml:space="preserve">
+    <value>An exception was thrown while trying to create an instance of an object of type '{0}'.</value>
+  </data>
 </root>
