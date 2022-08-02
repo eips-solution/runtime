@@ -16,7 +16,7 @@ namespace Niacomsoft.Eips.Diagnostics
         /// <returns> 统一诊断信息前缀。 </returns>
         protected virtual string GetUniversalMessagePrefix()
         {
-            if (ReferenceTypeEqualityComparer.None(Target) && string.IsNullOrWhiteSpace(MethodName))
+            if (ReferenceTypeEqualityComparer.None(Target) && StringEqualityComparer.Empty(MethodName))
                 return string.Empty;
             var prefixBuilder = new StringBuilder();
             if (!(Target is null))
