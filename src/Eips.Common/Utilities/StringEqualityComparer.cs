@@ -32,6 +32,8 @@ namespace Niacomsoft.Eips
         /// <seealso cref="EmptyCompareOptions" />
         public static bool Empty(string s, EmptyCompareOptions options = EmptyCompareOptions.Default)
         {
+            if (options == EmptyCompareOptions.OnlyNull)
+                return ReferenceTypeEqualityComparer.None(s);
             return options == EmptyCompareOptions.IncludeWhiteSpace
                 ? string.IsNullOrWhiteSpace(s)
                 : string.IsNullOrEmpty(s);

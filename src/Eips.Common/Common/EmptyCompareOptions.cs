@@ -14,6 +14,9 @@ namespace Niacomsoft.Eips
         /// <summary> 仅比较 <see cref="string.Empty" />。 </summary>
         OnlyEmpty = 2,
 
+        /// <summary> 仅比较是否等于 <c> null </c>。 </summary>
+        OnlyNull = 3,
+
         /// <summary> 默认的选项。等效于 <see cref="IncludeWhiteSpace" />。 </summary>
         Default = IncludeWhiteSpace
     }
