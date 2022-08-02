@@ -50,6 +50,7 @@ namespace Niacomsoft.Eips
         /// 时，则返回 <c> true </c>；否则返回 <c> false </c>。
         /// </para>
         /// </returns>
+        /// <seealso cref="String.Equals(string, StringComparison)" />
         public static bool IgnoreCaseEquals(string s1, string s2)
         {
             if (ReferenceTypeEqualityComparer.None(s1) || ReferenceTypeEqualityComparer.None(s2))
