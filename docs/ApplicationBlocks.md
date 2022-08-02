@@ -8,6 +8,12 @@
   - 命名空间：`Niacomsoft.Eips.Globalization.Resources`
   - NuGet 包名称：`{AssemblyName}`
   - 适用的 .NET 版本：`net40; netcoreapp3.1; netstandard2.1; net5.0; net6.0`
+- 公共类库
+  - 项目名称：`Eips.Common`
+  - 程序集名称：`Niacomsoft.Eips.Common`
+  - 命名空间：`Niacomsoft.Eips`
+  - NuGet 包名称：`{AssemblyName}`
+  - 适用的 .NET 版本：`net40; netcoreapp3.1; netstandard2.1; net5.0; net6.0`
 - 核心抽象
   - 项目名称：`Eips.Core.Abstractions`
   - 程序集名称：`Niacomsoft.Eips.Core.Abstractions`

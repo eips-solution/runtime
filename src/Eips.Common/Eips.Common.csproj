@@ -4,13 +4,13 @@
 		<TargetFrameworks>net40; netcoreapp3.1; netstandard2.1; net5.0; net6.0</TargetFrameworks>
 		<ImplicitUsings>disable</ImplicitUsings>
 		<Nullable>disable</Nullable>
-		<AssemblyName>Niacomsoft.Eips.Core.Abstractions</AssemblyName>
+		<AssemblyName>Niacomsoft.Eips.Common</AssemblyName>
 		<RootNamespace>Niacomsoft.Eips</RootNamespace>
 		<DocumentationFile>$(BaseOutputPath)$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\Eips.Globalization.Supported\Eips.Globalization.Supported.csproj" />
+	  <ProjectReference Include="..\Eips.Globalization.Supported\Eips.Globalization.Supported.csproj" />
 	</ItemGroup>
 
 </Project>
