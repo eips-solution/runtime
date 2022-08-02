@@ -13,4 +13,10 @@
 	  <ProjectReference Include="..\Eips.Globalization.Supported\Eips.Globalization.Supported.csproj" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Compile Update="Diagnostics\TraceInformationBuilder.cs">
+	    <IsBuilderFile>True</IsBuilderFile>
+	  </Compile>
+	</ItemGroup>
+
 </Project>

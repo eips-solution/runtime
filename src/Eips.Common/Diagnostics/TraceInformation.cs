@@ -90,4 +90,27 @@ namespace Niacomsoft.Eips.Diagnostics
         /// <returns> 完整的诊断信息。 </returns>
         public virtual string ToString(params object[] args) => $"{GetUniversalMessagePrefix()}{string.Format(Message, args)}";
     }
+
+    /// <summary> 提供了诊断内容相关的方法。 </summary>
+    /// <typeparam name="TTarget"> 需要诊断的目标类型。 </typeparam>
+    /// <seealso cref="TraceInformation" />
+    public class TraceInformation<TTarget> : TraceInformation
+    {
+        /// <summary>
+        /// 用于初始化一个 <see cref="TraceInformation{TTarget}" /> 类型的对象实例。
+        /// </summary>
+        /// <param name="method"> 需要诊断的方法名称。 </param>
+        /// <param name="message"> 诊断信息。 </param>
+        public TraceInformation(string method, string message) : base(typeof(TTarget), method, message)
+        {
+        }
+
+        /// <summary>
+        /// 用于初始化一个 <see cref="TraceInformation{TTarget}" /> 类型的对象实例。
+        /// </summary>
+        /// <param name="message"> 诊断信息。 </param>
+        public TraceInformation(string message) : base(typeof(TTarget), message)
+        {
+        }
+    }
 }
