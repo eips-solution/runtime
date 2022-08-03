@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net40; netcoreapp3.1; netstandard2.1; net5.0; net6.0</TargetFrameworks>
+		<TargetFrameworks>net40; net45; netcoreapp3.1; netstandard2.1; net5.0; net6.0</TargetFrameworks>
 		<ImplicitUsings>disable</ImplicitUsings>
 		<Nullable>disable</Nullable>
 		<AssemblyName>Niacomsoft.Eips.Core.Abstractions</AssemblyName>
