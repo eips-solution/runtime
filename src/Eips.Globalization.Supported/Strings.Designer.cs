@@ -241,7 +241,7 @@ namespace Niacomsoft.Eips.Globalization.Resources {
         }
         
         /// <summary>
-        ///   查找类似 “Enterprise InPrivate SaaS” 引发了一个未处理的异常。  的本地化字符串。
+        ///   查找类似 “Enterprise InPrivate SaaS” 引发了一个未处理的异常。 的本地化字符串。
         /// </summary>
         internal static string Exception_default_message {
             get {
