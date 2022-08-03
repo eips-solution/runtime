@@ -28,7 +28,7 @@ namespace Niacomsoft.Eips
         /// <seealso cref="Defaults.DefaultEncoding" />
         public static byte[] GetBytes(string s, Encoding encoding = null)
         {
-            if (ReferenceTypeEqualityComparer.None(s))
+            if (StringEqualityComparer.Empty(s, EmptyCompareOptions.OnlyNull))
             {
                 Debug.WriteLine(new TraceInformationBuilder().WithTarget<StringUtilities>()
                                                              .WithMethod(nameof(GetBytes))
