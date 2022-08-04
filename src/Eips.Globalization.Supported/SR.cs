@@ -12,7 +12,7 @@ namespace Niacomsoft.Eips.Globalization
     /// <summary> 提供了字符串资源相关的方法。 </summary>
     public class SR
     {
-        private static readonly ResourceManager _resourceMgr = Strings.ResourceManager;
+        private static readonly ResourceManager sr_resourceMgr = Strings.ResourceManager;
 
         /// <summary> 用于初始化一个 <see cref="SR" /> 类型的对象实例。 </summary>
         private SR()
@@ -30,7 +30,7 @@ namespace Niacomsoft.Eips.Globalization
         private static string InternalGetString(string resName)
         {
             InvalidResourceName(resName);
-            return _resourceMgr.GetString(resName);
+            return sr_resourceMgr.GetString(resName);
         }
 
         /// <summary>

@@ -253,4 +253,7 @@
   <data name="DynamicCreateObjectInstanceException_default_message" xml:space="preserve">
     <value>尝试创建 “{0}” 类型对象实例时，引发了异常。</value>
   </data>
+  <data name="DateTime_formatter" xml:space="preserve">
+    <value>yyyy年MM月dd日</value>
+  </data>
 </root>

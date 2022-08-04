@@ -178,6 +178,15 @@ namespace Niacomsoft.Eips.Globalization.Resources {
         }
         
         /// <summary>
+        ///   查找类似 yyyy年MM月dd日 的本地化字符串。
+        /// </summary>
+        internal static string DateTime_formatter {
+            get {
+                return ResourceManager.GetString("DateTime_formatter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 调试 的本地化字符串。
         /// </summary>
         internal static string Debug {
