@@ -88,6 +88,15 @@ namespace Niacomsoft.Eips.Globalization.Resources {
         }
         
         /// <summary>
+        ///   查找类似 无效的注解目标 “{0}”。 的本地化字符串。
+        /// </summary>
+        internal static string ArgumentNullException_invalid_annotation_target {
+            get {
+                return ResourceManager.GetString("ArgumentNullException_invalid_annotation_target", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 询问 的本地化字符串。
         /// </summary>
         internal static string Ask {
