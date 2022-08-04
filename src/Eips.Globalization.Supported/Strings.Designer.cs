@@ -187,6 +187,60 @@ namespace Niacomsoft.Eips.Globalization.Resources {
         }
         
         /// <summary>
+        ///   查找类似 {0} 天前 的本地化字符串。
+        /// </summary>
+        internal static string DateTime_formatter_a_few_days_ago {
+            get {
+                return ResourceManager.GetString("DateTime_formatter_a_few_days_ago", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 {0} 小时前 的本地化字符串。
+        /// </summary>
+        internal static string DateTime_formatter_a_few_hours_ago {
+            get {
+                return ResourceManager.GetString("DateTime_formatter_a_few_hours_ago", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 {0} 分钟前 的本地化字符串。
+        /// </summary>
+        internal static string DateTime_formatter_a_few_minutes_ago {
+            get {
+                return ResourceManager.GetString("DateTime_formatter_a_few_minutes_ago", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 一分钟前 的本地化字符串。
+        /// </summary>
+        internal static string DateTime_formatter_a_minute_ago {
+            get {
+                return ResourceManager.GetString("DateTime_formatter_a_minute_ago", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 刚刚 的本地化字符串。
+        /// </summary>
+        internal static string DateTime_formatter_just_now {
+            get {
+                return ResourceManager.GetString("DateTime_formatter_just_now", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 MM月dd日 的本地化字符串。
+        /// </summary>
+        internal static string DateTime_formatter_same_year {
+            get {
+                return ResourceManager.GetString("DateTime_formatter_same_year", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 调试 的本地化字符串。
         /// </summary>
         internal static string Debug {

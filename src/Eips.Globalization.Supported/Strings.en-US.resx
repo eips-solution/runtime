@@ -254,6 +254,24 @@
     <value>An exception was thrown while trying to create an instance of an object of type '{0}'.</value>
   </data>
   <data name="DateTime_formatter" xml:space="preserve">
-    <value>dd/MM/yyyy</value>
+    <value>yyyy-MM-dd</value>
+  </data>
+  <data name="DateTime_formatter_same_year" xml:space="preserve">
+    <value>MM-dd</value>
+  </data>
+  <data name="DateTime_formatter_just_now" xml:space="preserve">
+    <value>Just now</value>
+  </data>
+  <data name="DateTime_formatter_a_minute_ago" xml:space="preserve">
+    <value>A minute ago</value>
+  </data>
+  <data name="DateTime_formatter_a_few_minutes_ago" xml:space="preserve">
+    <value>{0} minutes ago</value>
+  </data>
+  <data name="DateTime_formatter_a_few_hours_ago" xml:space="preserve">
+    <value>{0} hours ago</value>
+  </data>
+  <data name="DateTime_formatter_a_few_days_ago" xml:space="preserve">
+    <value>{0} days ago</value>
   </data>
 </root>

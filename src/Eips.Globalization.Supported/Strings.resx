@@ -256,4 +256,23 @@
   <data name="DateTime_formatter" xml:space="preserve">
     <value>yyyy年MM月dd日</value>
   </data>
+  <data name="DateTime_formatter_same_year" xml:space="preserve">
+    <value>MM月dd日</value>
+  </data>
+  <data name="DateTime_formatter_just_now" xml:space="preserve">
+    <value>刚刚</value>
+    <comment>十秒钟之前</comment>
+  </data>
+  <data name="DateTime_formatter_a_minute_ago" xml:space="preserve">
+    <value>一分钟前</value>
+  </data>
+  <data name="DateTime_formatter_a_few_minutes_ago" xml:space="preserve">
+    <value>{0} 分钟前</value>
+  </data>
+  <data name="DateTime_formatter_a_few_hours_ago" xml:space="preserve">
+    <value>{0} 小时前</value>
+  </data>
+  <data name="DateTime_formatter_a_few_days_ago" xml:space="preserve">
+    <value>{0} 天前</value>
+  </data>
 </root>
