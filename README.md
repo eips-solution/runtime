@@ -18,6 +18,8 @@
   - Microsoft NuGet
 - **文档 Documentation**
   - [THE MIT LICENSE](LICENSE.md)
+  - [APPLICATION BLOCKS DESCRIPTION](docs/ApplicationBlocks.md)
+  - [REFERENCES](docs/References.md)
 
 ----
 

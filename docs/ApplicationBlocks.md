@@ -1,0 +1,82 @@
+# Application Blocks Description
+
+- 解决方案
+  - 名称：`Eips.Runtime`
+- 全球化支持
+  - 项目名称：`Eips.Globalization.Supported`
+  - 程序集名称：`Niacomsoft.Eips.Globalization.Supported`
+  - 命名空间：`Niacomsoft.Eips.Globalization.Resources`
+  - NuGet 包名称：`{AssemblyName}`
+  - 适用的 .NET 版本：`net40; netcoreapp3.1; netstandard2.1; net5.0; net6.0`
+- 公共类库
+  - 项目名称：`Eips.Common`
+  - 程序集名称：`Niacomsoft.Eips.Common`
+  - 命名空间：`Niacomsoft.Eips`
+  - NuGet 包名称：`{AssemblyName}`
+  - 适用的 .NET 版本：`net40; netcoreapp3.1; netstandard2.1; net5.0; net6.0`
+- 核心抽象
+  - 项目名称：`Eips.Core.Abstractions`
+  - 程序集名称：`Niacomsoft.Eips.Core.Abstractions`
+  - 命名空间：`Niacomsoft.Eips`
+  - NuGet 包名称：`{AssemblyName}`
+  - 适用的 .NET 版本：`net40; netcoreapp3.1; netstandard2.1; net5.0; net6.0`
+- 核心
+  - 项目名称：`Eips.Core`
+  - 程序集名称：`Niacomsoft.Eips.Core`
+  - 命名空间：`Niacomsoft.Eips`
+  - NuGet 包名称：`{AssemblyName}`
+  - 适用的 .NET 版本：`net40; netcoreapp3.1; netstandard2.1; net5.0; net6.0`
+- 配置抽象
+  - 项目名称：`Eips.Configuration.Abstractions`
+  - 程序集名称：`Niacomsoft.Eips.Configuration.Abstractions`
+  - 命名空间：`Niacomsoft.Eips.Configuration`
+  - NuGet 包名称：`{AssemblyName}`
+  - 适用的 .NET 版本：`net40; netcoreapp3.1; netstandard2.1; net5.0; net6.0`
+- 配置（仅适用于 .NET Core 或者 .NET 5.0+）
+  - 项目名称：`Eips.Configuration`
+  - 程序集名称：`Niacomsoft.Eips.Configuration`
+  - 命名空间：`Niacomsoft.Eips.Configuration`
+  - NuGet 包名称：`{AssemblyName}`
+  - 适用的 .NET 版本：`netcoreapp3.1; netstandard2.1; net5.0; net6.0`
+- *配置（适用于 .NET Framework 4.0+ 兼容模式）*
+  - 项目名称：`Eips.Configuration.Compatibility`
+  - 程序集名称：`Niacomsoft.Eips.Configuration.Compatibility`
+  - 命名空间：`Niacomsoft.Eips.Configuration`
+  - NuGet 包名称：`{AssemblyName}`
+  - 适用的 .NET 版本：`net40;`
+- 配置扩展 - 宏命令参数
+  - 项目名称：`Eips.Configuration.Extensions.MarcoParameters`
+  - 程序集名称：`Niacomsoft.Eips.Configuration.Extensions.MarcoParameters`
+  - 命名空间：`Niacomsoft.Eips.Configuration.Marco`
+  - NuGet 包名称：`{AssemblyName}`
+  - 适用的 .NET 版本：`net40; netcoreapp3.1; netstandard2.1; net5.0; net6.0`
+- 配置选项
+  - 项目名称：`Eips.Configuration.Options`
+  - 程序集名称：`Niacomsoft.Eips.Configuration.Options`
+  - 命名空间：`Niacomsoft.Eips.Configuration.Options`
+  - NuGet 包名称：`{AssemblyName}`
+  - 适用的 .NET 版本：`net40; netcoreapp3.1; netstandard2.1; net5.0; net6.0`
+- 核心扩展 - NANO-ID 生成
+  - 项目名称：`Eips.Core.Extensions.NanoIdGenerateUtilities`
+  - 程序集名称：`Niacomsoft.Eips.Extensions.NanoIdGenerateUtilities`
+  - 命名空间：`Niacomsoft.Eips`
+  - NuGet 包名称：`{AssemblyName}`
+  - 适用的 .NET 版本：`netcoreapp3.1; netstandard2.1; net5.0; net6.0`
+- 依赖注入抽象
+  - 项目名称：`Eips.DependencyInjection.Abstractions`
+  - 程序集名称：`Niacomsoft.Eips.DependencyInjection.Abstractions`
+  - 命名空间：`Niacomsoft.Eips.DependencyInjection`
+  - NuGet 包名称：`{AssemblyName}`
+  - 适用的 .NET 版本：`net40; netcoreapp3.1; netstandard2.1; net5.0; net6.0`
+- 依赖注入（仅适用于 .NET Core 或者 .NET 5.0+）
+  - 项目名称：`Eips.DependencyInjection`
+  - 程序集名称：`Niacomsoft.Eips.DependencyInjection`
+  - 命名空间：`Niacomsoft.Eips.DependencyInjection`
+  - NuGet 包名称：`{AssemblyName}`
+  - 适用的 .NET 版本：`netcoreapp3.1; netstandard2.1; net5.0; net6.0`
+- *依赖注入 - 基于 Unity（仅适用于 .NET Framework 4.0+）*
+  - 项目名称：`Eips.DependencyInjection.Compatibility.Unity`
+  - 程序集名称：`Niacomsoft.Eips.DependencyInjection.Compatibility.Unity`
+  - 命名空间：`Niacomsoft.Eips.DependencyInjection`
+  - NuGet 包名称：`{AssemblyName}`
+  - 适用的 .NET 版本：`net40`

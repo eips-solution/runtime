@@ -20,6 +20,7 @@
     "release:preview-dryrun": "standard-version -p preview -i CHANGELOG.md --dry-run",
     "release:preview": "standard-version -p preview -i CHANGELOG.md",
     "release:release-dryrun": "standard-version -i CHANGELOG.md --dry-run",
-    "release:release": "standard-version -i CHANGELOG.md"
+    "release:release": "standard-version -i CHANGELOG.md",
+    "build:dotnet-build-all": "dotnet build ./src/Build/BuildAll.proj"
   }
 }

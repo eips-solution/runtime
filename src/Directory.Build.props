@@ -1,0 +1,42 @@
+<Project>
+
+	<PropertyGroup>
+		<ImplicitUsings>disable</ImplicitUsings>
+		<Nullable>disable</Nullable>
+		<BaseOutputPath>..\..\.Build\</BaseOutputPath>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<VersionPrefix>1.0.0</VersionPrefix>
+		<Version>$(VersionPrefix)-224c7c04</Version>
+		<Authors>Wang Yucai</Authors>
+		<Company>Niacom.dev</Company>
+		<Product>Eips</Product>
+		<Description>企业私有化 SaaS 服务 - .NET 运行时 SDK。</Description>
+		<Copyright>Copyright © 2006 - 2022 Wang Yucai. All rights reserved.</Copyright>
+		<PackageProjectUrl>https://github.com/eips-solution/runtime</PackageProjectUrl>
+		<PackageIcon>App.png</PackageIcon>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<RepositoryUrl>https://github.com/eips-solution/runtime</RepositoryUrl>
+		<AssemblyVersion>$(VersionPrefix).1</AssemblyVersion>
+		<FileVersion>$(VersionPrefix).1</FileVersion>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\..\assets\Icons\App.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Include="..\..\README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Include="..\..\LICENSE">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>		
+	</ItemGroup>
+
+</Project>
