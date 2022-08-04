@@ -42,7 +42,7 @@ namespace Niacomsoft.Eips
         /// <summary> 尝试将字符串转换成等效的可为空的 <see cref="decimal" /> 类型的值。 </summary>
         /// <param name="s"> 字符串。 </param>
         /// <returns>
-        /// 当调用 <see cref="decimal.TryParse(string?, out decimal)" /> 方法返回 <c>
+        /// 当调用 <see cref="decimal.TryParse(string, out decimal)" /> 方法返回 <c>
         /// false </c> 时，将返回 <c> null </c>。
         /// </returns>
         public static decimal? TryToDecimal(string s) => decimal.TryParse(s, out decimal result) ? result : new decimal?();

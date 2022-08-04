@@ -47,7 +47,7 @@ namespace Niacomsoft.Eips
         /// <summary> 尝试将字符串转换成等效的可为空的 <see cref="short" /> 类型的值。 </summary>
         /// <param name="s"> 字符串。 </param>
         /// <returns>
-        /// 当调用 <see cref="short.TryParse(string?, out short)" /> 方法返回 <c> false
+        /// 当调用 <see cref="short.TryParse(string, out short)" /> 方法返回 <c> false
         /// </c> 时，将返回 <c> null </c>。
         /// </returns>
         public static short? TryToInt16(string s) => short.TryParse(s, out short result) ? result : new short?();

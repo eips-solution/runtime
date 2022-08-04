@@ -41,7 +41,7 @@ namespace Niacomsoft.Eips
         /// <summary> 尝试将字符串转换成等效的可为空的 <see cref="double" /> 类型的值。 </summary>
         /// <param name="s"> 字符串。 </param>
         /// <returns>
-        /// 当调用 <see cref="double.TryParse(string?, out double)" /> 方法返回 <c>
+        /// 当调用 <see cref="double.TryParse(string, out double)" /> 方法返回 <c>
         /// false </c> 时，将返回 <c> null </c>。
         /// </returns>
         public static double? TryToDouble(string s) => double.TryParse(s, out double result) ? result : new double?();

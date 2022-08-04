@@ -47,7 +47,7 @@ namespace Niacomsoft.Eips
         /// <summary> 尝试将字符串转换成等效的可为空的 <see cref="long" /> 类型的值。 </summary>
         /// <param name="s"> 字符串。 </param>
         /// <returns>
-        /// 当调用 <see cref="long.TryParse(string?, out long)" /> 方法返回 <c> false
+        /// 当调用 <see cref="long.TryParse(string, out long)" /> 方法返回 <c> false
         /// </c> 时，将返回 <c> null </c>。
         /// </returns>
         public static long? TryToInt64(string s) => long.TryParse(s, out long result) ? result : new long?();
