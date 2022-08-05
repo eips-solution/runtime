@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eips.Core.Abstractions", "E
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eips.Common", "Eips.Common\Eips.Common.csproj", "{EB47B26B-21E3-472C-8B28-8647FCCE4C93}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eips.Core", "Eips.Core\Eips.Core.csproj", "{B97F5A27-9984-49FE-A51C-5F5E7A5CBCBE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,12 +29,16 @@ Global
 		{EB47B26B-21E3-472C-8B28-8647FCCE4C93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB47B26B-21E3-472C-8B28-8647FCCE4C93}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB47B26B-21E3-472C-8B28-8647FCCE4C93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B97F5A27-9984-49FE-A51C-5F5E7A5CBCBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B97F5A27-9984-49FE-A51C-5F5E7A5CBCBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B97F5A27-9984-49FE-A51C-5F5E7A5CBCBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B97F5A27-9984-49FE-A51C-5F5E7A5CBCBE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {D210EF73-BAAF-4871-9344-4BE9816F6ADA}
 		RESX_NeutralResourcesLanguage = zh-Hans
+		SolutionGuid = {D210EF73-BAAF-4871-9344-4BE9816F6ADA}
 	EndGlobalSection
 EndGlobal
