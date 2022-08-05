@@ -17,7 +17,6 @@ namespace Niacomsoft.Eips.Reflection
     /// <seealso cref="IAttributeHelper{TTarget}" />
     /// <seealso cref="IAsyncAttributeHelper{TTarget}" />
     /// <seealso cref="AttributeHelper{TTarget}" />
-    /// <seealso cref="AsyncAttributeHelper{TTarget}" />
     /// <seealso cref="Assembly" />
     #if !NET40
     public sealed partial class AssemblyAttributeHelper : AsyncAttributeHelper<Assembly>, IAsyncAttributeHelper<Assembly>, IAttributeHelper<Assembly>
