@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eips.Common", "Eips.Common\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eips.Core", "Eips.Core\Eips.Core.csproj", "{B97F5A27-9984-49FE-A51C-5F5E7A5CBCBE}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eips.Extensions.Hashid", "Eips.Extensions.Hashid\Eips.Extensions.Hashid.csproj", "{231DD440-68EA-4556-8AA3-209046452355}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{B97F5A27-9984-49FE-A51C-5F5E7A5CBCBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B97F5A27-9984-49FE-A51C-5F5E7A5CBCBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B97F5A27-9984-49FE-A51C-5F5E7A5CBCBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{231DD440-68EA-4556-8AA3-209046452355}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{231DD440-68EA-4556-8AA3-209046452355}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{231DD440-68EA-4556-8AA3-209046452355}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{231DD440-68EA-4556-8AA3-209046452355}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
