@@ -1,4 +1,31 @@
 # CHANGELOG
+## [1.0.0-build.2](https://github.com/eips-solution/runtime/compare/v1.0.0-build.1...v1.0.0-build.2) (2022-08-06)
+
+
+### CHORE
+
+* 修改了 NuGet 版本号。 ([1f52a7e](https://github.com/eips-solution/runtime/commit/1f52a7e90f179421bf76dd1e19ae52a6ded21bcd))
+
+
+### NEW FEATURE
+
+* 新增 Int32HashFormatter。 ([98136e4](https://github.com/eips-solution/runtime/commit/98136e4da40e83779a7f607a872d86e707cd5999))
+* 新增 Int64HashFormatter。 ([5745785](https://github.com/eips-solution/runtime/commit/57457858908e5d0b62219c6c1af3a6f692bb6749)), closes [#5](https://github.com/eips-solution/runtime/issues/5)
+* 新增程序集注解实现 AssemblyAttributeHelper。 ([a35d4ca](https://github.com/eips-solution/runtime/commit/a35d4cacb6e414ac887993e485471fb7618eb7e4))
+* 新增创建哈希格式 ID 加密密钥的接口 IHashIdCryptographyKeyProvider。 ([dad6c43](https://github.com/eips-solution/runtime/commit/dad6c437fa897c4ed0fa3bfc67bbc8b58f7ce3b3))
+* 新增哈希数值接口 IHashIdFormatter。 ([92004f1](https://github.com/eips-solution/runtime/commit/92004f1c51e225c246e2498b5cf0d34298c0f09c))
+* 新增核心实现项目。 ([a02b5f7](https://github.com/eips-solution/runtime/commit/a02b5f7ada8a9d5f5edde9e8fdf697902a1cb174))
+* 新增获取成员注解信息的方法实现 MemberAttributeHelper。 ([4adf47f](https://github.com/eips-solution/runtime/commit/4adf47f7e194e0cfb6296b40fa5cca9fec4ab28d))
+* 新增扩展接口 IStringifyIDGenerateUtilities 等。 ([85a9d89](https://github.com/eips-solution/runtime/commit/85a9d89308c5f2445449f4912892181e41137981))
+* 新增配置服务接口和基类 IConfigurationBroker。 ([e7731ee](https://github.com/eips-solution/runtime/commit/e7731ee1e804ba748febae36cdfff6959ddd6045))
+* 新增配置选项标记接口 IConfigurableOptions。 ([3b5d50a](https://github.com/eips-solution/runtime/commit/3b5d50ab01f231eafd06a19c39b010420ecd63d1))
+* 新增生成 ID 的工具方法 IIDGenerateUtilities。 ([7f2313c](https://github.com/eips-solution/runtime/commit/7f2313c94f6c33cc87b929a086a4ce2cc1dba499))
+* 新增数值哈希格式化方法基类 HashIdFormatter。 ([05b8bb6](https://github.com/eips-solution/runtime/commit/05b8bb6adaaabecd6e5592f4642311cf06e2beca))
+* 新增异步的注解助手接口 IAsyncAttributeHelper。 ([5402f6a](https://github.com/eips-solution/runtime/commit/5402f6a1c6e573cab93d95cd6781bf9ed810cdd2))
+* 新增注解助手抽象类 AttributeHelper.cs 和 AsyncAttributeHelper.cs。 ([2be82b2](https://github.com/eips-solution/runtime/commit/2be82b21d19ff3eb6b02ee602f7e9cc948d62421))
+* 新增注解助手接口 IAttributeHelper。 ([c7759db](https://github.com/eips-solution/runtime/commit/c7759db92b8cb9a8cba5c5e8883478097052d09a))
+* 新增组合式 API 入口接口 IFluentInterface。 ([598f772](https://github.com/eips-solution/runtime/commit/598f772053c0a54b7e421980d8decd96f4f3e3be))
+
 ## 1.0.0-build.1 (2022-08-04)
 
 
