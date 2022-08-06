@@ -12,5 +12,9 @@ namespace Niacomsoft.Eips.Data.Entity.Fields
         /// <summary> 是否系统内置的。 </summary>
         /// <value> 设置或获取一个值，用于表示是否系统内置的。 </value>
         T BuiltIn { get; set; }
+
+        /// <summary> 是否非系统内置的。 </summary>
+        /// <value> 获取一个值，用于表示是否非系统内置的。 </value>
+        T NotBuiltIn { get; }
     }
 }

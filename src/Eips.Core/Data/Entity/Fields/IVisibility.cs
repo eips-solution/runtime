@@ -11,7 +11,7 @@ namespace Niacomsoft.Eips.Data.Entity.Fields
     {
         /// <summary> 是否隐藏。 </summary>
         /// <value> 获取一个值，用于表示是否隐藏。 </value>
-        T Hide { get; }
+        T Hidden { get; }
 
         /// <summary> 是否可见。 </summary>
         /// <value> 设置或获取一个值，用于表示是否可见。 </value>

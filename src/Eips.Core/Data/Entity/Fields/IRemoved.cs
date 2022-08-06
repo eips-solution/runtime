@@ -16,5 +16,13 @@ namespace Niacomsoft.Eips.Data.Entity.Fields
         /// <summary> 是否已经移除。 </summary>
         /// <value> 设置或获取一个值，用于表示是否已经移除。 </value>
         T HasRemoved { get; set; }
+
+        /// <summary> 状态是否正常。 </summary>
+        /// <value> 获取一个值，用于表示状态是否正常。 </value>
+        T Normal { get; set; }
+
+        /// <summary> 是否已经物理删除。 </summary>
+        /// <value> 获取一个值，用于表示是否已经物理删除。 </value>
+        bool PhysicalDeleted { get; }
     }
 }
