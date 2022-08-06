@@ -274,4 +274,10 @@
   <data name="DateTime_formatter_a_few_days_ago" xml:space="preserve">
     <value>{0} days ago</value>
   </data>
+  <data name="ArgumentNullException_invalid_annotation_target" xml:space="preserve">
+    <value>Invalid annotation target: "{0}".</value>
+  </data>
+  <data name="NotNaturalNumberException_default_message" xml:space="preserve">
+    <value>'{0}' is not a natural number.</value>
+  </data>
 </root>

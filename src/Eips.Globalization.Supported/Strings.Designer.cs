@@ -88,6 +88,15 @@ namespace Niacomsoft.Eips.Globalization.Resources {
         }
         
         /// <summary>
+        ///   查找类似 无效的注解目标 “{0}”。 的本地化字符串。
+        /// </summary>
+        internal static string ArgumentNullException_invalid_annotation_target {
+            get {
+                return ResourceManager.GetString("ArgumentNullException_invalid_annotation_target", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 询问 的本地化字符串。
         /// </summary>
         internal static string Ask {
@@ -417,6 +426,15 @@ namespace Niacomsoft.Eips.Globalization.Resources {
         internal static string No_Thanks {
             get {
                 return ResourceManager.GetString("No_Thanks", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 “{0}” 不是一个自然数。 的本地化字符串。
+        /// </summary>
+        internal static string NotNaturalNumberException_default_message {
+            get {
+                return ResourceManager.GetString("NotNaturalNumberException_default_message", resourceCulture);
             }
         }
         

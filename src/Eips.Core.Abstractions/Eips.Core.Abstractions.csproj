@@ -10,6 +10,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<ProjectReference Include="..\Eips.Common\Eips.Common.csproj" />
 		<ProjectReference Include="..\Eips.Globalization.Supported\Eips.Globalization.Supported.csproj" />
 	</ItemGroup>
 
