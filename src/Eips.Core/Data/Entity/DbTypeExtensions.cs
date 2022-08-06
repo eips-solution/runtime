@@ -9,7 +9,7 @@ namespace Niacomsoft.Eips.Data.Entity
     /// 为 C# 类型提供的扩展方法。
     /// <para> 提供了 C# 类型和数据库类型值相互转换的方法。 </para>
     /// </summary>
-    public static class DbTypeExtensions
+    public static partial class DbTypeExtensions
     {
         /// <summary>
         /// 将数据库中的可为空的 <see cref="int" /> 类型的值转换成 <see cref="bool" /> 类型的值。
