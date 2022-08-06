@@ -18,6 +18,12 @@ namespace Niacomsoft.Eips
         /// <summary> 默认的诊断器类别。 </summary>
         public const string DefaultDiagnosticCategory = "EIPS";
 
+        /// <summary> 等效于 <c> false </c> 的 <see cref="int" /> 类型的值。 </summary>
+        public const int FalseInt32 = 0;
+
+        /// <summary> 等效于 <c> true </c> 的 <see cref="int" /> 类型的值。 </summary>
+        public const int TrueInt32 = 1;
+
         /// <summary>
         /// 默认的编码程序。
         /// <para> <see cref="Encoding" /> 类型的对象实例。 </para>
