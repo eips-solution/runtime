@@ -277,4 +277,7 @@
   <data name="ArgumentNullException_invalid_annotation_target" xml:space="preserve">
     <value>无效的注解目标 “{0}”。</value>
   </data>
+  <data name="NotNaturalNumberException_default_message" xml:space="preserve">
+    <value>“{0}” 不是一个自然数。</value>
+  </data>
 </root>

@@ -430,6 +430,15 @@ namespace Niacomsoft.Eips.Globalization.Resources {
         }
         
         /// <summary>
+        ///   查找类似 “{0}” 不是一个自然数。 的本地化字符串。
+        /// </summary>
+        internal static string NotNaturalNumberException_default_message {
+            get {
+                return ResourceManager.GetString("NotNaturalNumberException_default_message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 好的 的本地化字符串。
         /// </summary>
         internal static string Ok {
