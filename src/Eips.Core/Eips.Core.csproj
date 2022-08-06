@@ -15,4 +15,8 @@
     <ProjectReference Include="..\Eips.Globalization.Supported\Eips.Globalization.Supported.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Data\Entity\" />
+  </ItemGroup>
+
 </Project>
