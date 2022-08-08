@@ -19,7 +19,7 @@ namespace Niacomsoft.Eips
         public const string DefaultDiagnosticCategory = "EIPS";
 
         /// <summary> 默认每页分页大小。 </summary>
-        public const int DefaultPerPaginationSize = 20;
+        public const int DefaultPerPaginationSize = 0x14;
 
         /// <summary> 等效于 <c> false </c> 的 <see cref="int" /> 类型的值。 </summary>
         public const int FalseInt32 = 0;
