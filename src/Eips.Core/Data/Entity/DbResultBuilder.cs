@@ -7,8 +7,9 @@ using System;
 
 namespace Niacomsoft.Eips.Data.Entity
 {
-    /// <summary> 提供了构建 <see cref="IDbResult"/> 相关的方法。 <summary> <seealso
-    /// cref="IDbResult"/> <seealso cref="IDbResult{T}"/>
+    /// <summary> 提供了构建 <see cref="IDbResult"/> 相关的方法。 </summary> 
+    /// <seealso cref="IDbResult"/> 
+    /// <seealso cref="IDbResult{T}"/>
     public class DbResultBuilder
     {
         private bool m_completed;
