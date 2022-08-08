@@ -15,4 +15,10 @@
     <ProjectReference Include="..\Eips.Globalization.Supported\Eips.Globalization.Supported.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="Data\Entity\DbResultBuilder.cs">
+      <IsBuilderFile>True</IsBuilderFile>
+    </Compile>
+  </ItemGroup>
+
 </Project>

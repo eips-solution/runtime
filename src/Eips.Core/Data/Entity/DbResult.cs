@@ -14,7 +14,7 @@ namespace Niacomsoft.Eips.Data.Entity
         /// <summary> 用于初始化一个 <see cref="DbResult" /> 类型的对象实例。 </summary>
         /// <param name="completed"> 数据库事务是否执行成功。 </param>
         /// <param name="exception"> 数据库事务异常。 </param>
-        protected DbResult(bool completed, Exception exception)
+        public DbResult(bool completed, Exception exception)
         {
             Completed = ReferenceTypeEqualityComparer.None(exception) && completed;
             if (ReferenceTypeEqualityComparer.NotNone(exception))
@@ -62,7 +62,7 @@ namespace Niacomsoft.Eips.Data.Entity
         /// <summary> 用于初始化一个 <see cref="DbResult{T}" /> 类型的对象实例。 </summary>
         /// <param name="completed"> 数据库事务是否执行成功。 </param>
         /// <param name="exception"> 数据库事务异常。 </param>
-        protected DbResult(bool completed, Exception exception) : base(completed, exception)
+        public DbResult(bool completed, Exception exception) : base(completed, exception)
         {
         }
 
