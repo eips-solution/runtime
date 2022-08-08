@@ -280,4 +280,7 @@
   <data name="NotNaturalNumberException_default_message" xml:space="preserve">
     <value>“{0}” 不是一個自然數。</value>
   </data>
+  <data name="DbExecutionException_default_message" xml:space="preserve">
+    <value>數據庫事務執行失敗。</value>
+  </data>
 </root>

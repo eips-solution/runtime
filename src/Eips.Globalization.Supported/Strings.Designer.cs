@@ -250,6 +250,15 @@ namespace Niacomsoft.Eips.Globalization.Resources {
         }
         
         /// <summary>
+        ///   查找类似 数据库事务执行失败。 的本地化字符串。
+        /// </summary>
+        internal static string DbExecutionException_default_message {
+            get {
+                return ResourceManager.GetString("DbExecutionException_default_message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 调试 的本地化字符串。
         /// </summary>
         internal static string Debug {
