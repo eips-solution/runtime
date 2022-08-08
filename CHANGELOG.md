@@ -1,4 +1,37 @@
 # CHANGELOG
+## [1.0.0-build.3](https://github.com/eips-solution/runtime/compare/v1.0.0-build.2...v1.0.0-build.3) (2022-08-08)
+
+
+### BUG FIXED
+
+* 调整了 XML 注释中的问题。 ([6352540](https://github.com/eips-solution/runtime/commit/6352540fb6aedd5e003549fc34145c644f9bea3e))
+
+
+### NEW FEATURE
+
+* 完成了数据实体属性接口定义。 ([60fb00d](https://github.com/eips-solution/runtime/commit/60fb00d8e268d9d809ecbfa3ac130a612c2cd649))
+* 新增 Gender 数据库类型扩展 DbTypeExtensions.Gender。 ([351c800](https://github.com/eips-solution/runtime/commit/351c800c43efebe9b6e69bb18223954b954f3e76))
+* 新增分页参数接口 IPagedParameter。 ([bb3e7f6](https://github.com/eips-solution/runtime/commit/bb3e7f61df4ebc0df39a45aa173dac56da111fee))
+* 新增分页列表构建器 PagedListBuilder。 ([ddd96a3](https://github.com/eips-solution/runtime/commit/ddd96a326b65f85bf963e1b8d0f96029072b98ff))
+* 新增分页列表集合相关的接口 IPagedList。 ([7cf1c33](https://github.com/eips-solution/runtime/commit/7cf1c3362ba3ccc7cdec18ba2fe77867a345542d))
+* 新增了反向属性。 ([b59e066](https://github.com/eips-solution/runtime/commit/b59e066bb7903fa8ac29a6224e9825e72782c1fc))
+* 新增数据结果 DbResult。 ([51b0666](https://github.com/eips-solution/runtime/commit/51b06661952e9c4f616e435fdb7894cab46ebf37))
+* 新增数据库结果构建程序 DbResultBuilder。 ([fb9d20e](https://github.com/eips-solution/runtime/commit/fb9d20eecd75824ed0fd65635075607b243a431c))
+* 新增数据库类型和 C# 类型值相关的扩展方法 DbTypeExtensions。 ([3f53eee](https://github.com/eips-solution/runtime/commit/3f53eee43bc38a7f61ff108017008532bd13f550))
+* 新增数据库事务结果接口 IDbResult。 ([7981dc3](https://github.com/eips-solution/runtime/commit/7981dc34190ee99b51d79c78ee295b3d72b1c6bb))
+* 新增数据排序相关的参数实体 ISortParameter。 ([1cc8afe](https://github.com/eips-solution/runtime/commit/1cc8afe979df24256fdb43aa17bcf6bb0f91ab14))
+* 新增性别枚举类型 Gender。 ([252d6c5](https://github.com/eips-solution/runtime/commit/252d6c5d15e05fdf552f8ec77f0054cc4d1199b7))
+* 新增一组标记接口。 ([c40c36e](https://github.com/eips-solution/runtime/commit/c40c36e0d01ca8246586db37ee2543d0062c1d8b))
+* 新增一组数据实体标识接口。 ([df33044](https://github.com/eips-solution/runtime/commit/df3304405b737cdb3f09c78ab073e27f8b43adc1))
+* 修改了 Defaults，增加了 MinimumPaginationIndex 和 DefaultPerPaginationSize 常量。 ([69fb999](https://github.com/eips-solution/runtime/commit/69fb9995e109ef510f0b3b28d3f25e05f531cb9a))
+
+
+### CHORE
+
+* 合并了 feature/1.0.0.1 。 ([a639e60](https://github.com/eips-solution/runtime/commit/a639e60d34f1405eb56bbbee1b9fde579dad4b55))
+* 修改了 NuGet 版本号。 ([2915ecd](https://github.com/eips-solution/runtime/commit/2915ecdef772c8c5d175ce68d36f3ead017c69c1))
+* 修改了 NuGet 版本号。 ([2319c2e](https://github.com/eips-solution/runtime/commit/2319c2e031d5e0d159d70b0da4581a4a14347703))
+
 ## [1.0.0-build.2](https://github.com/eips-solution/runtime/compare/v1.0.0-build.1...v1.0.0-build.2) (2022-08-06)
 
 
