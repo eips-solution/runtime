@@ -48,6 +48,6 @@ namespace Niacomsoft.Eips.Data.Entity.Queryable
 
         /// <summary> 元素总数量。 </summary>
         /// <value> 设置或获取一个值，用于表示元素总数量。 </value>
-        public long TotalElementsCount { get; set; }
+        public virtual long TotalElementsCount { get; set; }
     }
 }
