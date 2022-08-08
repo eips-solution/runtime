@@ -280,4 +280,7 @@
   <data name="NotNaturalNumberException_default_message" xml:space="preserve">
     <value>'{0}' is not a natural number.</value>
   </data>
+  <data name="DbExecutionException_default_message" xml:space="preserve">
+    <value>Database transaction execution failed.</value>
+  </data>
 </root>
