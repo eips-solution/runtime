@@ -11,6 +11,10 @@ namespace Niacomsoft.Eips
     /// <summary> 定义了访问环境变量信息的接口。 </summary>
     public interface IEnvironmentVariable
     {
+        /// <summary> 环境变量是否有值。 </summary>
+        /// <value> 获取一个值，用于表示环境变量是否有值。 </value>
+        bool Exists { get; }
+
         /// <summary>
         /// 指定名称环境变量值 <see cref="Value" /> 是否不等于 <c> null </c> 和 <see cref="string.Empty" />。
         /// </summary>

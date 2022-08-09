@@ -3,9 +3,9 @@
  * LICENSED UNDER THE MIT LICENSE. SEE LICENSE FILE IN THE PROJECT ROOT FOR FULL LICENSE INFORMATION.                                      *
 \* *************************************************************************************************************************************** */
 
-using Niacomsoft.Eips.Globalization;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Niacomsoft.Eips
 {
@@ -18,28 +18,24 @@ namespace Niacomsoft.Eips
     {
         /// <summary> 用于初始化一个 <see cref="Environment" /> 类型的对象实例。 </summary>
         /// <param name="envVarName"> 环境变量名称。 </param>
-        /// <param name="value"></param>
-        /// <param name="target"></param>
-        /// <param name="values"></param>
-        /// <exception cref="ArgumentException">
-        /// 当 <paramref name="envVarName" /> 等于 <c> null </c>、
-        /// <see cref="string.Empty" /> 或空格符时，将引发此类型的异常。
-        /// </exception>
+        /// <param name="value"> </param>
+        /// <param name="target"> </param>
+        /// <param name="values"> </param>
         internal EnvironmentVariable(string envVarName,
                                      string value = null,
                                      EnvironmentVariableTarget? target = null,
                                      IDictionary<EnvironmentVariableTarget, string> values = null)
         {
-            if (StringEqualityComparer.Empty(envVarName))
-            {
-                throw new ArgumentException(SR.Format("ArgumentException_empty_or_whitespace", nameof(envVarName)), nameof(envVarName));
-            }
-
             Name = envVarName;
             Target = target;
             Value = value;
             Values = values;
         }
+
+        /// <summary> 环境变量是否有值。 </summary>
+        /// <value> 获取一个值，用于表示环境变量是否有值。 </value>
+        public bool Exists => ReferenceTypeEqualityComparer.None(Values)
+                              || !Values.Any(item => !StringEqualityComparer.Empty(item.Value, EmptyCompareOptions.OnlyEmpty));
 
         /// <summary>
         /// 指定名称环境变量值
