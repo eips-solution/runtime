@@ -283,4 +283,10 @@
   <data name="DbExecutionException_default_message" xml:space="preserve">
     <value>數據庫事務執行失敗。</value>
   </data>
+  <data name="AuthenticationFailureReason_user_not_exists" xml:space="preserve">
+    <value>用戶 “{0}” 不存在。</value>
+  </data>
+  <data name="AuthenticationFailureReason_wrong_password" xml:space="preserve">
+    <value>錯誤的登錄密碼。</value>
+  </data>
 </root>

@@ -106,6 +106,24 @@ namespace Niacomsoft.Eips.Globalization.Resources {
         }
         
         /// <summary>
+        ///   查找类似 用户 “{0}” 不存在。 的本地化字符串。
+        /// </summary>
+        internal static string AuthenticationFailureReason_user_not_exists {
+            get {
+                return ResourceManager.GetString("AuthenticationFailureReason_user_not_exists", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 密码错误。 的本地化字符串。
+        /// </summary>
+        internal static string AuthenticationFailureReason_wrong_password {
+            get {
+                return ResourceManager.GetString("AuthenticationFailureReason_wrong_password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 返回 的本地化字符串。
         /// </summary>
         internal static string Back {
