@@ -11,3 +11,4 @@
 using System.Diagnostics.CodeAnalysis;
 
 [assembly: SuppressMessage("Design", "Ex0100:Member may throw undocumented exception", Justification = "<挂起>", Scope = "member", Target = "~M:Niacomsoft.Eips.AttributeHelper`1.InvalidTarget(`0)")]
+[assembly: SuppressMessage("Design", "Ex0100:Member may throw undocumented exception", Justification = "<挂起>", Scope = "member", Target = "~M:Niacomsoft.Eips.Security.Cryptography.CryptographicAlgorithms.WriteToStream(System.Byte[],System.IO.Stream)")]

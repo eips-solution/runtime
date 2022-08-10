@@ -4,6 +4,7 @@
 \* *************************************************************************************************************************************** */
 
 using Niacomsoft.Eips.Globalization;
+using System.IO;
 using System.Security.Cryptography;
 
 namespace Niacomsoft.Eips.Security.Cryptography
@@ -23,5 +24,15 @@ namespace Niacomsoft.Eips.Security.Cryptography
             if (ReferenceTypeEqualityComparer.None(data) || ValueTypeComparer.Compare(data.LongLength))
                 throw new CryptographicException(SR.GetString("CryptographicException_invalid_byte_data"));
         }
+
+        /// <summary> 将字节数据写入流 <paramref name="destinationStream" />。 </summary>
+        /// <param name="input"> 字节数据。 </param>
+        /// <param name="destinationStream">
+        /// 目标流。
+        /// <para> 派生自 <see cref="Stream" /> 类型的对象实例。 </para>
+        /// </param>
+        /// <seealso cref="Stream" />
+        protected virtual void WriteToStream(byte[] input, Stream destinationStream) 
+            => destinationStream.Write(input, 0, input.Length);
     }
 }
