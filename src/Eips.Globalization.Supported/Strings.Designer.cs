@@ -196,6 +196,15 @@ namespace Niacomsoft.Eips.Globalization.Resources {
         }
         
         /// <summary>
+        ///   查找类似 无效的字节数据数组。 的本地化字符串。
+        /// </summary>
+        internal static string CryptographicException_invalid_byte_data {
+            get {
+                return ResourceManager.GetString("CryptographicException_invalid_byte_data", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 危险的 的本地化字符串。
         /// </summary>
         internal static string Dangerous {

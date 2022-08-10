@@ -289,4 +289,7 @@
   <data name="AuthenticationFailureReason_wrong_password" xml:space="preserve">
     <value>密码错误。</value>
   </data>
+  <data name="CryptographicException_invalid_byte_data" xml:space="preserve">
+    <value>无效的字节数据数组。</value>
+  </data>
 </root>
