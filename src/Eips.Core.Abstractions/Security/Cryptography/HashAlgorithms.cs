@@ -11,7 +11,7 @@ namespace Niacomsoft.Eips.Security.Cryptography
     /// <summary> 提供了哈希计算相关的基本方法。 </summary>
     /// <seealso cref="IHashAlgorithms" />
     /// <seealso cref="CryptographicAlgorithms" />
-    public abstract class HashAlgorithms : CryptographicAlgorithms, IHashAlgorithms
+    public abstract partial class HashAlgorithms : CryptographicAlgorithms, IHashAlgorithms
     {
         /// <summary> 用于初始化一个 <see cref="HashAlgorithms" /> 类型的对象实例。 </summary>
         protected HashAlgorithms() : base()
