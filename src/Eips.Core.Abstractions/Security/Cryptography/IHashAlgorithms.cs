@@ -8,7 +8,7 @@ using System.IO;
 namespace Niacomsoft.Eips.Security.Cryptography
 {
     /// <summary> 定义了哈希算法接口。 </summary>
-    public interface IHashAlgorithm
+    public interface IHashAlgorithms
     {
         /// <summary> 计算哈希。 </summary>
         /// <param name="input"> 需要计算的字节数组。 </param>
