@@ -24,7 +24,7 @@ namespace Niacomsoft.Eips.Security.Cryptography
         /// <para> 派生自 <see cref="HashAlgorithm" /> 类型的对象实例。 </para>
         /// </value>
         /// <seealso cref="HashAlgorithm" />
-        protected abstract HashAlgorithm HashAlgorithm { get; }
+        protected abstract HashAlgorithm Provider { get; }
 
         /// <summary> 计算哈希。 </summary>
         /// <param name="input"> 需要计算的字节数组。 </param>
