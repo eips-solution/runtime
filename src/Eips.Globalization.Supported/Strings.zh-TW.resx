@@ -292,4 +292,7 @@
   <data name="CryptographicException_invalid_byte_data" xml:space="preserve">
     <value>無效的字節數據數組。</value>
   </data>
+  <data name="IncorrectPasswordAlphabetLengthException_default_message" xml:space="preserve">
+    <value>密碼字母表長度不正確。最小為 “8”。</value>
+  </data>
 </root>

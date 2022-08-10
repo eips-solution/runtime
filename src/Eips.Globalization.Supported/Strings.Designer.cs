@@ -430,6 +430,15 @@ namespace Niacomsoft.Eips.Globalization.Resources {
         }
         
         /// <summary>
+        ///   查找类似 密码字母表长度不正确。最小为 “8”。 的本地化字符串。
+        /// </summary>
+        internal static string IncorrectPasswordAlphabetLengthException_default_message {
+            get {
+                return ResourceManager.GetString("IncorrectPasswordAlphabetLengthException_default_message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 信息 的本地化字符串。
         /// </summary>
         internal static string Information {
