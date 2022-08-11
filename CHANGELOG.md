@@ -1,4 +1,69 @@
 # CHANGELOG
+## [1.0.0-build.4](https://github.com/eips-solution/runtime/compare/v1.0.0-build.3...v1.0.0-build.4) (2022-08-11)
+
+
+### CODE STYLE
+
+* 调整了命名。 ([d45f0fe](https://github.com/eips-solution/runtime/commit/d45f0fe63c16a6c672fe8cf9e39849dd9d021478))
+
+
+### REFACTOR
+
+* 调整了 ConstantStringResolver 为非 Sealed 。 ([02eb656](https://github.com/eips-solution/runtime/commit/02eb6561cc4a91a28c670f1f9352d69acd373b3c))
+* 接口 IHashAlgorithm 重命名为 IHashAlgorithms。 ([9923dc4](https://github.com/eips-solution/runtime/commit/9923dc40c9b52a3cf7a6e63fd1a52da0eb5f40f3))
+
+
+### BUG FIXED
+
+* 删除了无用的接口定义 IStringResolver。 ([ac97005](https://github.com/eips-solution/runtime/commit/ac970053e69ac41688ca1b83a4c660201dec9236))
+
+
+### NEW FEATURE
+
+* 完成了对称加密算法的同步方法 SymmetricAlgorithms。 ([17a7d73](https://github.com/eips-solution/runtime/commit/17a7d730599e6131300fd0a7dd31faf6ffc47545))
+* 完成了密码生成工具 RandomPasswordGenerator。 ([cc368e6](https://github.com/eips-solution/runtime/commit/cc368e6ed0790037cb7cb48e67a0fd3f2af43afe))
+* 为 SymmetricAlgorithms 增加异步方法实现。 ([8065024](https://github.com/eips-solution/runtime/commit/8065024d4aff43eb9185cf901ff62db8743b41b3))
+* 新增 AES 对称加密算法。 ([1dd2882](https://github.com/eips-solution/runtime/commit/1dd28825931a381889b00276ae1bb3f385600e08)), closes [#10](https://github.com/eips-solution/runtime/issues/10)
+* 新增 AES 算法密钥接口 IAESCryptographicKey。 ([42405dc](https://github.com/eips-solution/runtime/commit/42405dcb2f09bfb0d54dd6a6a3141cfaa0625a0b))
+* 新增 DES 对称加密算法 DESAlgorithmsProvider。 ([b23425d](https://github.com/eips-solution/runtime/commit/b23425dcb316ffd1af849c0b2ed1e602a419155c))
+* 新增 DES 算法密钥生成方法 DESCryptographicKey。 ([27e3e60](https://github.com/eips-solution/runtime/commit/27e3e6064000ec0b77bce70eda885aeddacf9375))
+* 新增 HashAlgorithms.Async.cs，为 HashAlgorithms 添加异步方法。 ([61f3112](https://github.com/eips-solution/runtime/commit/61f31122955aa99085474ddb0047dddee34e15a7))
+* 新增 Json 序列化属性名称常量类 JsonSerializerProperties。 ([cfad999](https://github.com/eips-solution/runtime/commit/cfad99923cc70b2f176b5886578e1fa0efe7c6b7))
+* 新增 MD5 哈希算法 MD5AlgorithmsProvider。 ([4a54675](https://github.com/eips-solution/runtime/commit/4a5467585897f2f8e30bca11e8305172e93949e8))
+* 新增 XML 序列化属性常量 XmlSerializerProperties。 ([641c493](https://github.com/eips-solution/runtime/commit/641c4930d5479a9be4f33b54a5bd0d4a7ab8c9e6))
+* 新增对称加密接口 ISymmetricAlgorithms & IAsyncSymmetricAlgorithms。 ([663abc8](https://github.com/eips-solution/runtime/commit/663abc88711e7d389cb75a4ea6f14d8bcd22ac8e))
+* 新增对称加密密钥接口 ISymmetricCryptographicKey。 ([079a580](https://github.com/eips-solution/runtime/commit/079a580544aca3dfd076909c2a00d399e157f20c))
+* 新增访问环境变量的方法 EnvironmentVariableAccessor。 ([1d7d7fc](https://github.com/eips-solution/runtime/commit/1d7d7fcac27715a3591149bb29771bc1b94e6aa6)), closes [#6](https://github.com/eips-solution/runtime/issues/6)
+* 新增访问环境变量信息的接口 IEnvironmentVariableAccessor 和 IAsyncEnvironmentVariableAccessor。 ([f31960c](https://github.com/eips-solution/runtime/commit/f31960ca0a0ae4bd017f5fb9df7cee80ce59b5f3))
+* 新增哈希算法工厂接口 IHashAlgorithmsFactory。 ([f18f21e](https://github.com/eips-solution/runtime/commit/f18f21ebdba3f3c790db6b0c8f22e9af7102de7e))
+* 新增哈希算法工厂类 HashAlgorithmsFactory。 ([396e0a2](https://github.com/eips-solution/runtime/commit/396e0a227f666eb2728a6b68bf23be32a6b63a6f))
+* 新增哈希算法基类 HashAlgorithms。 ([d5a8bfb](https://github.com/eips-solution/runtime/commit/d5a8bfb18e6d7b78b5fde23c315174a710b59703))
+* 新增哈希算法接口 IHashAlgorithm。 ([52b478b](https://github.com/eips-solution/runtime/commit/52b478baf4dd2317bed9b3a3c957633622d5f298))
+* 新增哈希算法接口 IHashAlgorithms & IAsyncHashAlgorithms。 ([c04b47b](https://github.com/eips-solution/runtime/commit/c04b47b26f30d6df0fce3af21d6bbc82d73e8e57))
+* 新增哈希算法枚举类型 SupportedHashAlgorithms。 ([8bc68f2](https://github.com/eips-solution/runtime/commit/8bc68f2488d5ac9f6e50179302b722a7b51b8094))
+* 新增环境变量接口 IEnvironmentVariable。 ([7f9f618](https://github.com/eips-solution/runtime/commit/7f9f6185a6d7332aaee8658c2e08e172391acb61))
+* 新增环境信息类 EnvironmentVariable。 ([aa688af](https://github.com/eips-solution/runtime/commit/aa688afbfd248b61aad9f358a469e5cf279bda96))
+* 新增基础身份认证凭据 BasicCredentials。 ([8b09774](https://github.com/eips-solution/runtime/commit/8b09774a19d4e0ae8bf09b4efaedacf6d93205f2))
+* 新增加密算法基类 CryptographicAlgorithms。 ([a8dd9de](https://github.com/eips-solution/runtime/commit/a8dd9de15c6e8299e63916f767f87afd178b197d))
+* 新增解析字符串的接口 IStringResolver。 ([cce48ef](https://github.com/eips-solution/runtime/commit/cce48ef83afe2ea138697a1988f24ede673e393f))
+* 新增密码生成接口 IPasswordGenerateUtilities。 ([78710b0](https://github.com/eips-solution/runtime/commit/78710b0e423c5688b699bf267c56f10772dd3576))
+* 新增内置的身份信息点名称 ClaimsName。 ([0a2e27d](https://github.com/eips-solution/runtime/commit/0a2e27d996e2f72d6ec03ae92a1864abdc68c44e)), closes [#7](https://github.com/eips-solution/runtime/issues/7)
+* 新增身份认证失败原因枚举类型 AuthenticationFailureReason。 ([16b0ae8](https://github.com/eips-solution/runtime/commit/16b0ae8515a99a43b832653346f38c5fea50923a))
+* 新增随机密码生成程序 RandomPasswordGenerator （未完） ([6e9f715](https://github.com/eips-solution/runtime/commit/6e9f71593da6d4cb64bf01712896255e37e3eb4a))
+* 新增新的异常类型 IncorrectPasswordAlphabetLengthException。 ([2dd690a](https://github.com/eips-solution/runtime/commit/2dd690af186411892e49c2a1ff8de1d72650a861))
+* 新增一组哈希算法 SHA1AlgorithmsProvider 等。 ([954e5d9](https://github.com/eips-solution/runtime/commit/954e5d93f40165bc00c6b0627f3fadcd9b4569a4))
+* 修改了 CryptographicAlgorithms 类，新增 WriteToStream 方法。 ([d9c9b2f](https://github.com/eips-solution/runtime/commit/d9c9b2f8547aec0666b8e9c99639a8403c2c814a))
+* 修改了 Defaults，增加了 DefaultPasswordAlphabet 常量字段。 ([f6fcd1d](https://github.com/eips-solution/runtime/commit/f6fcd1d537638e798d4e7754bc45de4465261f04))
+* 修改了 DESCryptographicKey 的 InternalGetKeyString 方法，增加了 Substring 方法，用以保留 8 位字符串。 ([4cde244](https://github.com/eips-solution/runtime/commit/4cde244121fd47bea35a54180ebc4f2d2f7d2a95))
+* 修改了 IEnvironmentVariable，增加了 Exists 属性。 ([54e6818](https://github.com/eips-solution/runtime/commit/54e681824046ad2869a464dd2884e5e4eee75cae))
+
+
+### CHORE
+
+* 开始编写新的 API。 ([eb935a0](https://github.com/eips-solution/runtime/commit/eb935a017942e64566851f7e651182da98acc6a2))
+* 新增 Stream.Seek 方法的异常禁止。 ([15ca515](https://github.com/eips-solution/runtime/commit/15ca51510ad049508666bdf21bf6484f4c778653))
+* 修改了 NuGet 版本号。 ([a352e6c](https://github.com/eips-solution/runtime/commit/a352e6cf0f3b90b787b8d9e09dfeb2d6a1ca9a55))
+
 ## [1.0.0-build.3](https://github.com/eips-solution/runtime/compare/v1.0.0-build.2...v1.0.0-build.3) (2022-08-08)
 
 
