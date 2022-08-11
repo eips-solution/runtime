@@ -13,6 +13,7 @@ namespace Niacomsoft.Eips.Security.Cryptography
 {
     /// <summary> 提供了对称加密相关的基本方法。 </summary>
     /// <seealso cref="ISymmetricAlgorithms" />
+    /// <seealso cref="IAsyncSymmetricAlgorithms" />
     /// <seealso cref="CryptographicAlgorithms" />
     public abstract partial class SymmetricAlgorithms : CryptographicAlgorithms, ISymmetricAlgorithms
     {
@@ -27,7 +28,7 @@ namespace Niacomsoft.Eips.Security.Cryptography
         /// <seealso cref="ISymmetricCryptographicKey" />
         /// <seealso cref="CipherMode" />
         /// <seealso cref="PaddingMode" />
-        private void InitializeSymmetricAlgorithmsProvider(ISymmetricCryptographicKey key, CipherMode mode, PaddingMode padding)
+        protected virtual void InitializeSymmetricAlgorithmsProvider(ISymmetricCryptographicKey key, CipherMode mode, PaddingMode padding)
         {
             Provider.IV = Provider.Key = key.GetKeyData();
             Provider.Mode = mode;
