@@ -9,9 +9,8 @@ using System.Threading.Tasks;
 
 namespace Niacomsoft.Eips.Security.Cryptography
 {
-    /// <summary> 定义了异步对称加密算法的接口。 </summary>
-    /// <seealso cref="ISymmetricAlgorithms" />
-    public interface IAsyncSymmetricAlgorithms : ISymmetricAlgorithms
+#if !NET40
+    public abstract partial class SymmetricAlgorithms : IAsyncSymmetricAlgorithms
     {
         /// <summary> (异步的方法) 从 <paramref name="sourceStream" /> 读取数据并解密。 </summary>
         /// <param name="sourceStream">
@@ -20,18 +19,18 @@ namespace Niacomsoft.Eips.Security.Cryptography
         /// </param>
         /// <param name="key">
         /// 加密密钥。
-        /// <para> 当 <paramref name="key" /> 等于 <c> null </c> 时，将使用 <see cref="ISymmetricAlgorithms.DefaultKey" />。 </para>
+        /// <para> 当 <paramref name="key" /> 等于 <c> null </c> 时，将使用 <see cref="P:Niacomsoft.Eips.Security.Cryptography.ISymmetricAlgorithms.DefaultKey" />。 </para>
         /// </param>
         /// <param name="mode">
         /// 可为空的 <see cref="CipherMode" /> 类型的值。
         /// <para>
-        /// 当 <paramref name="mode" />.HasValue 等于 <c> false </c> 时，将使用 <see cref="ISymmetricAlgorithms.DefaultCipherMode" />。
+        /// 当 <paramref name="mode" />.HasValue 等于 <c> false </c> 时，将使用 <see cref="P:Niacomsoft.Eips.Security.Cryptography.ISymmetricAlgorithms.DefaultCipherMode" />。
         /// </para>
         /// </param>
         /// <param name="padding">
         /// 可为空的 <see cref="PaddingMode" /> 类型的值。
         /// <para>
-        /// 当 <paramref name="padding" />.HasValue 等于 <c> false </c> 时，将使用 <see cref="ISymmetricAlgorithms.DefaultPaddingMode" />。
+        /// 当 <paramref name="padding" />.HasValue 等于 <c> false </c> 时，将使用 <see cref="P:Niacomsoft.Eips.Security.Cryptography.ISymmetricAlgorithms.DefaultPaddingMode" />。
         /// </para>
         /// </param>
         /// <returns> 解密后的数据。 </returns>
@@ -40,24 +39,25 @@ namespace Niacomsoft.Eips.Security.Cryptography
         /// <seealso cref="PaddingMode" />
         /// <seealso cref="Stream" />
         /// <seealso cref="Task{TResult}" />
-        Task<byte[]> DecryptAsync(Stream sourceStream, ISymmetricCryptographicKey key = null, CipherMode? mode = null, PaddingMode? padding = null);
+        public virtual Task<byte[]> DecryptAsync(Stream sourceStream, ISymmetricCryptographicKey key = null, CipherMode? mode = null, PaddingMode? padding = null)
+            => Task.Run(() => Decrypt(sourceStream, key, mode, padding));
 
         /// <summary> (异步的方法) 解密。 </summary>
         /// <param name="encryptedData"> 需要解密的字节数据。 </param>
         /// <param name="key">
         /// 加密密钥。
-        /// <para> 当 <paramref name="key" /> 等于 <c> null </c> 时，将使用 <see cref="ISymmetricAlgorithms.DefaultKey" />。 </para>
+        /// <para> 当 <paramref name="key" /> 等于 <c> null </c> 时，将使用 <see cref="P:Niacomsoft.Eips.Security.Cryptography.ISymmetricAlgorithms.DefaultKey" />。 </para>
         /// </param>
         /// <param name="mode">
         /// 可为空的 <see cref="CipherMode" /> 类型的值。
         /// <para>
-        /// 当 <paramref name="mode" />.HasValue 等于 <c> false </c> 时，将使用 <see cref="ISymmetricAlgorithms.DefaultCipherMode" />。
+        /// 当 <paramref name="mode" />.HasValue 等于 <c> false </c> 时，将使用 <see cref="P:Niacomsoft.Eips.Security.Cryptography.ISymmetricAlgorithms.DefaultCipherMode" />。
         /// </para>
         /// </param>
         /// <param name="padding">
         /// 可为空的 <see cref="PaddingMode" /> 类型的值。
         /// <para>
-        /// 当 <paramref name="padding" />.HasValue 等于 <c> false </c> 时，将使用 <see cref="ISymmetricAlgorithms.DefaultPaddingMode" />。
+        /// 当 <paramref name="padding" />.HasValue 等于 <c> false </c> 时，将使用 <see cref="P:Niacomsoft.Eips.Security.Cryptography.ISymmetricAlgorithms.DefaultPaddingMode" />。
         /// </para>
         /// </param>
         /// <returns> 加密后的字节数据。 </returns>
@@ -65,27 +65,25 @@ namespace Niacomsoft.Eips.Security.Cryptography
         /// <seealso cref="CipherMode" />
         /// <seealso cref="PaddingMode" />
         /// <seealso cref="Task{TResult}" />
-        Task<byte[]> DecryptAsync(byte[] encryptedData,
-                       ISymmetricCryptographicKey key = null,
-                       CipherMode? mode = null,
-                       PaddingMode? padding = null);
+        public virtual Task<byte[]> DecryptAsync(byte[] encryptedData, ISymmetricCryptographicKey key = null, CipherMode? mode = null, PaddingMode? padding = null)
+            => Task.Run(() => Decrypt(encryptedData, key, mode, padding));
 
         /// <summary> (异步的方法) 加密。 </summary>
         /// <param name="input"> 需要加密的字节数据。 </param>
         /// <param name="key">
         /// 加密密钥。
-        /// <para> 当 <paramref name="key" /> 等于 <c> null </c> 时，将使用 <see cref="ISymmetricAlgorithms.DefaultKey" />。 </para>
+        /// <para> 当 <paramref name="key" /> 等于 <c> null </c> 时，将使用 <see cref="P:Niacomsoft.Eips.Security.Cryptography.ISymmetricAlgorithms.DefaultKey" />。 </para>
         /// </param>
         /// <param name="mode">
         /// 可为空的 <see cref="CipherMode" /> 类型的值。
         /// <para>
-        /// 当 <paramref name="mode" />.HasValue 等于 <c> false </c> 时，将使用 <see cref="ISymmetricAlgorithms.DefaultCipherMode" />。
+        /// 当 <paramref name="mode" />.HasValue 等于 <c> false </c> 时，将使用 <see cref="P:Niacomsoft.Eips.Security.Cryptography.ISymmetricAlgorithms.DefaultCipherMode" />。
         /// </para>
         /// </param>
         /// <param name="padding">
         /// 可为空的 <see cref="PaddingMode" /> 类型的值。
         /// <para>
-        /// 当 <paramref name="padding" />.HasValue 等于 <c> false </c> 时，将使用 <see cref="ISymmetricAlgorithms.DefaultPaddingMode" />。
+        /// 当 <paramref name="padding" />.HasValue 等于 <c> false </c> 时，将使用 <see cref="P:Niacomsoft.Eips.Security.Cryptography.ISymmetricAlgorithms.DefaultPaddingMode" />。
         /// </para>
         /// </param>
         /// <returns> 加密后的字节数据。 </returns>
@@ -93,7 +91,8 @@ namespace Niacomsoft.Eips.Security.Cryptography
         /// <seealso cref="CipherMode" />
         /// <seealso cref="PaddingMode" />
         /// <seealso cref="Task{TResult}" />
-        Task<byte[]> EncryptAsync(byte[] input, ISymmetricCryptographicKey key = null, CipherMode? mode = null, PaddingMode? padding = null);
+        public virtual Task<byte[]> EncryptAsync(byte[] input, ISymmetricCryptographicKey key = null, CipherMode? mode = null, PaddingMode? padding = null)
+            => Task.Run(() => Encrypt(input, key, mode, padding));
 
         /// <summary> (异步的方法) 加密并将加密后的数据写入 <paramref name="destionationStream" />。 </summary>
         /// <param name="input"> 需要加密的字节数据。 </param>
@@ -103,18 +102,18 @@ namespace Niacomsoft.Eips.Security.Cryptography
         /// </param>
         /// <param name="key">
         /// 加密密钥。
-        /// <para> 当 <paramref name="key" /> 等于 <c> null </c> 时，将使用 <see cref="ISymmetricAlgorithms.DefaultKey" />。 </para>
+        /// <para> 当 <paramref name="key" /> 等于 <c> null </c> 时，将使用 <see cref="P:Niacomsoft.Eips.Security.Cryptography.ISymmetricAlgorithms.DefaultKey" />。 </para>
         /// </param>
         /// <param name="mode">
         /// 可为空的 <see cref="CipherMode" /> 类型的值。
         /// <para>
-        /// 当 <paramref name="mode" />.HasValue 等于 <c> false </c> 时，将使用 <see cref="ISymmetricAlgorithms.DefaultCipherMode" />。
+        /// 当 <paramref name="mode" />.HasValue 等于 <c> false </c> 时，将使用 <see cref="P:Niacomsoft.Eips.Security.Cryptography.ISymmetricAlgorithms.DefaultCipherMode" />。
         /// </para>
         /// </param>
         /// <param name="padding">
         /// 可为空的 <see cref="PaddingMode" /> 类型的值。
         /// <para>
-        /// 当 <paramref name="padding" />.HasValue 等于 <c> false </c> 时，将使用 <see cref="ISymmetricAlgorithms.DefaultPaddingMode" />。
+        /// 当 <paramref name="padding" />.HasValue 等于 <c> false </c> 时，将使用 <see cref="P:Niacomsoft.Eips.Security.Cryptography.ISymmetricAlgorithms.DefaultPaddingMode" />。
         /// </para>
         /// </param>
         /// <returns> <see cref="Task" /> 类型的对象实例。 </returns>
@@ -123,10 +122,8 @@ namespace Niacomsoft.Eips.Security.Cryptography
         /// <seealso cref="PaddingMode" />
         /// <seealso cref="Stream" />
         /// <seealso cref="Task" />
-        Task EncryptAsync(byte[] input,
-                     Stream destionationStream,
-                     ISymmetricCryptographicKey key = null,
-                     CipherMode? mode = null,
-                     PaddingMode? padding = null);
+        public virtual Task EncryptAsync(byte[] input, Stream destionationStream, ISymmetricCryptographicKey key = null, CipherMode? mode = null, PaddingMode? padding = null)
+            => Task.Run(() => Encrypt(input, destionationStream, key, mode, padding));
     }
+#endif
 }

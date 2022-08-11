@@ -14,7 +14,7 @@ namespace Niacomsoft.Eips.Security.Cryptography
     /// <summary> 提供了对称加密相关的基本方法。 </summary>
     /// <seealso cref="ISymmetricAlgorithms" />
     /// <seealso cref="CryptographicAlgorithms" />
-    public abstract class SymmetricAlgorithms : CryptographicAlgorithms, ISymmetricAlgorithms
+    public abstract partial class SymmetricAlgorithms : CryptographicAlgorithms, ISymmetricAlgorithms
     {
         private const int c_bufferSize = 0x400;
 
