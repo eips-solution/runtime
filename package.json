@@ -1,6 +1,6 @@
 {
   "name": "@niacomsoft/eips.runtime",
-  "version": "1.0.0-build.3",
+  "version": "1.0.0-build.4",
   "description": "基于 .NET 的 “企业私有 SaaS 服务” 运行时。",
   "main": "index.js",
   "repository": "https://github.com/eips-solution/runtime",

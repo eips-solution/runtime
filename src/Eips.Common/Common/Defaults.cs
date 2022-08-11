@@ -18,6 +18,9 @@ namespace Niacomsoft.Eips
         /// <summary> 默认的诊断器类别。 </summary>
         public const string DefaultDiagnosticCategory = "EIPS";
 
+        /// <summary> 默认密码字母表。 </summary>
+        public const string DefaultPasswordAlphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_-!@#$%^&*=+";
+
         /// <summary> 默认每页分页大小。 </summary>
         public const int DefaultPerPaginationSize = 0x14;
 

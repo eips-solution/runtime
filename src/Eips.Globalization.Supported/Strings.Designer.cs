@@ -106,6 +106,24 @@ namespace Niacomsoft.Eips.Globalization.Resources {
         }
         
         /// <summary>
+        ///   查找类似 用户 “{0}” 不存在。 的本地化字符串。
+        /// </summary>
+        internal static string AuthenticationFailureReason_user_not_exists {
+            get {
+                return ResourceManager.GetString("AuthenticationFailureReason_user_not_exists", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 密码错误。 的本地化字符串。
+        /// </summary>
+        internal static string AuthenticationFailureReason_wrong_password {
+            get {
+                return ResourceManager.GetString("AuthenticationFailureReason_wrong_password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 返回 的本地化字符串。
         /// </summary>
         internal static string Back {
@@ -174,6 +192,15 @@ namespace Niacomsoft.Eips.Globalization.Resources {
         internal static string Create_New {
             get {
                 return ResourceManager.GetString("Create_New", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 无效的字节数据数组。 的本地化字符串。
+        /// </summary>
+        internal static string CryptographicException_invalid_byte_data {
+            get {
+                return ResourceManager.GetString("CryptographicException_invalid_byte_data", resourceCulture);
             }
         }
         
@@ -399,6 +426,15 @@ namespace Niacomsoft.Eips.Globalization.Resources {
         internal static string Import {
             get {
                 return ResourceManager.GetString("Import", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 密码字母表长度不正确。最小为 “8”。 的本地化字符串。
+        /// </summary>
+        internal static string IncorrectPasswordAlphabetLengthException_default_message {
+            get {
+                return ResourceManager.GetString("IncorrectPasswordAlphabetLengthException_default_message", resourceCulture);
             }
         }
         

@@ -283,4 +283,16 @@
   <data name="DbExecutionException_default_message" xml:space="preserve">
     <value>Database transaction execution failed.</value>
   </data>
+  <data name="AuthenticationFailureReason_user_not_exists" xml:space="preserve">
+    <value>The user '{0}' does not exist.</value>
+  </data>
+  <data name="AuthenticationFailureReason_wrong_password" xml:space="preserve">
+    <value>Incorrect login password.</value>
+  </data>
+  <data name="CryptographicException_invalid_byte_data" xml:space="preserve">
+    <value>Invalid byte data array.</value>
+  </data>
+  <data name="IncorrectPasswordAlphabetLengthException_default_message" xml:space="preserve">
+    <value>Password alphabet length is incorrect. The minimum is "8".</value>
+  </data>
 </root>

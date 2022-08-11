@@ -8,16 +8,16 @@ using System.Collections.Generic;
 namespace Niacomsoft.Eips.Data.Entity.Queryable
 {
     /// <summary> 定义了供分页的数据列表结果接口。 </summary>
-    /// <typeparam name="T"> 元素类型。 </typeparam>
-    public interface IPagedList<T>
+    /// <typeparam name="TElement"> 元素类型。 </typeparam>
+    public interface IPagedList<TElement>
     {
         /// <summary> 元素集合。 </summary>
-        /// <value> 设置或获取 <typeparamref name="T" /> 类型的对象实例或值的集合，用于表示元素集合。 </value>
+        /// <value> 设置或获取 <typeparamref name="TElement" /> 类型的对象实例或值的集合，用于表示元素集合。 </value>
         /// <seealso cref="IEnumerable{T}" />
-        IEnumerable<T> Elements { get; set; }
+        IEnumerable<TElement> Rows { get; set; }
 
         /// <summary> 元素总数量。 </summary>
         /// <value> 设置或获取一个值，用于表示元素总数量。 </value>
-        long TotalElementsCount { get; set; }
+        long TotalRowsNumber { get; set; }
     }
 }

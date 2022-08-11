@@ -283,4 +283,16 @@
   <data name="DbExecutionException_default_message" xml:space="preserve">
     <value>数据库事务执行失败。</value>
   </data>
+  <data name="AuthenticationFailureReason_user_not_exists" xml:space="preserve">
+    <value>用户 “{0}” 不存在。</value>
+  </data>
+  <data name="AuthenticationFailureReason_wrong_password" xml:space="preserve">
+    <value>密码错误。</value>
+  </data>
+  <data name="CryptographicException_invalid_byte_data" xml:space="preserve">
+    <value>无效的字节数据数组。</value>
+  </data>
+  <data name="IncorrectPasswordAlphabetLengthException_default_message" xml:space="preserve">
+    <value>密码字母表长度不正确。最小为 ”8“。</value>
+  </data>
 </root>
