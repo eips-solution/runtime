@@ -7,7 +7,7 @@
 		<GenerateDocumentationFile>True</GenerateDocumentationFile>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<VersionPrefix>1.0.0</VersionPrefix>
-		<Version>$(VersionPrefix)-ddd96a32</Version>
+		<Version>$(VersionPrefix)-1dd28825</Version>
 		<Authors>Wang Yucai</Authors>
 		<Company>Niacom.dev</Company>
 		<Product>Eips</Product>
@@ -17,8 +17,8 @@
 		<PackageIcon>App.png</PackageIcon>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<RepositoryUrl>https://github.com/eips-solution/runtime</RepositoryUrl>
-		<AssemblyVersion>$(VersionPrefix).3</AssemblyVersion>
-		<FileVersion>$(VersionPrefix).3</FileVersion>
+		<AssemblyVersion>$(VersionPrefix).4</AssemblyVersion>
+		<FileVersion>$(VersionPrefix).4</FileVersion>
 	</PropertyGroup>
 
 	<ItemGroup>
