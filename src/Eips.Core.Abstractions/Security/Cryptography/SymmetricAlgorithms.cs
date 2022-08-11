@@ -19,22 +19,6 @@ namespace Niacomsoft.Eips.Security.Cryptography
     {
         private const int c_bufferSize = 0x400;
 
-        /// <summary> 初始化对称加密算法。 </summary>
-        /// <param name="key">
-        /// 实现了 <see cref="ISymmetricCryptographicKey" /> 类型接口的对象实例。
-        /// </param>
-        /// <param name="mode"> <see cref="CipherMode" /> 类型的值。 </param>
-        /// <param name="padding"> <see cref="PaddingMode" /> 类型的值。 </param>
-        /// <seealso cref="ISymmetricCryptographicKey" />
-        /// <seealso cref="CipherMode" />
-        /// <seealso cref="PaddingMode" />
-        protected virtual void InitializeSymmetricAlgorithmsProvider(ISymmetricCryptographicKey key, CipherMode mode, PaddingMode padding)
-        {
-            Provider.IV = Provider.Key = key.GetKeyData();
-            Provider.Mode = mode;
-            Provider.Padding = padding;
-        }
-
         /// <summary> 为参数赋值。 </summary>
         /// <param name="key">
         /// 加密密钥。
@@ -107,11 +91,27 @@ namespace Niacomsoft.Eips.Security.Cryptography
 
         /// <summary> 对称加密算法。 </summary>
         /// <value>
-        /// 获取 <see cref="SymmetricAlgorithm" /> 类型的对象实例，用于表示对称加密算法。
+        /// 设置或获取 <see cref="SymmetricAlgorithm" /> 类型的对象实例，用于表示对称加密算法。
         /// <para> 派生自 <see cref="SymmetricAlgorithm" /> 类型的对象实例。 </para>
         /// </value>
         /// <seealso cref="SymmetricAlgorithm" />
-        protected abstract SymmetricAlgorithm Provider { get; }
+        protected virtual SymmetricAlgorithm Provider { get; set; }
+
+        /// <summary> 初始化对称加密算法。 </summary>
+        /// <param name="key">
+        /// 实现了 <see cref="ISymmetricCryptographicKey" /> 类型接口的对象实例。
+        /// </param>
+        /// <param name="mode"> <see cref="CipherMode" /> 类型的值。 </param>
+        /// <param name="padding"> <see cref="PaddingMode" /> 类型的值。 </param>
+        /// <seealso cref="ISymmetricCryptographicKey" />
+        /// <seealso cref="CipherMode" />
+        /// <seealso cref="PaddingMode" />
+        protected virtual void InitializeSymmetricAlgorithmsProvider(ISymmetricCryptographicKey key, CipherMode mode, PaddingMode padding)
+        {
+            Provider.IV = Provider.Key = key.GetKeyData();
+            Provider.Mode = mode;
+            Provider.Padding = padding;
+        }
 
         /// <summary> 默认的 <see cref="CipherMode" />。 </summary>
         /// <value> 获取一个值，用于表示默认的 <see cref="CipherMode" />。 </value>
