@@ -14,10 +14,7 @@ namespace Niacomsoft.Eips.Security.Cryptography
 
         /// <summary> 获取密钥字符串。 </summary>
         /// <returns> 密钥字符串。 </returns>
-        protected override string InternalGetKeyString()
-        {
-            return m_internalDesKey;
-        }
+        protected override string InternalGetKeyString() => m_internalDesKey.Trim().PadRight(8, 'e').Substring(0, 8);
 
         /// <summary> 用于初始化一个 <see cref="DESCryptographicKey" /> 类型的对象实例。 </summary>
         public DESCryptographicKey()
