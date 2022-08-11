@@ -27,7 +27,7 @@ namespace Niacomsoft.Eips.Security.Cryptography
         PaddingMode DefaultPaddingMode { get; }
 
         /// <summary> 解密。 </summary>
-        /// <param name="encryptedDate"> 需要解密的字节数据。 </param>
+        /// <param name="encryptedData"> 需要解密的字节数据。 </param>
         /// <param name="key">
         /// 加密密钥。
         /// <para> 当 <paramref name="key" /> 等于 <c> null </c> 时，将使用 <see cref="DefaultKey" />。 </para>
@@ -48,7 +48,7 @@ namespace Niacomsoft.Eips.Security.Cryptography
         /// <seealso cref="ISymmetricAlgorithms" />
         /// <seealso cref="CipherMode" />
         /// <seealso cref="PaddingMode" />
-        byte[] Decrypt(byte[] encryptedDate,
+        byte[] Decrypt(byte[] encryptedData,
                        ISymmetricCryptographicKey key = null,
                        CipherMode? mode = null,
                        PaddingMode? padding = null);
