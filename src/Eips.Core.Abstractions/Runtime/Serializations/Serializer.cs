@@ -12,7 +12,7 @@ namespace Niacomsoft.Eips.Runtime.Serializations
 {
     /// <summary> 提供了数据序列化相关的基本方法。 </summary>
     /// <seealso cref="ISerializer" />
-    public abstract class Serializer : ISerializer
+    public abstract partial class Serializer : ISerializer
     {
         /// <summary>
         /// 从流 <paramref name="deserializeStream" /> 中反序列化得到
