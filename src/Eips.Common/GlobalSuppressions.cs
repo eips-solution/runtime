@@ -25,6 +25,6 @@ using System.Diagnostics.CodeAnalysis;
 [assembly: SuppressMessage("Design", "Ex0100:Member may throw undocumented exception", Justification = "<挂起>", Scope = "member", Target = "~M:Niacomsoft.Eips.StringUtilities.ToFixed(System.Int64,System.Int64)~System.String")]
 [assembly: SuppressMessage("Design", "Ex0100:Member may throw undocumented exception", Justification = "<挂起>", Scope = "member", Target = "~M:Niacomsoft.Eips.StringUtilities.WithThousandSeparators(System.Int64,System.Int64)~System.String")]
 [assembly: SuppressMessage("Roslynator", "RCS1194:Implement exception constructors.", Justification = "<挂起>", Scope = "type", Target = "~T:Niacomsoft.Eips.NotNaturalNumberException")]
-[assembly: SuppressMessage("Roslynator", "RCS1194:Implement exception constructors.", Justification = "<挂起>", Scope = "type", Target = "~T:Niacomsoft.Eips.Exceptions.Data.DbExecutionException")]
 [assembly: SuppressMessage("Roslynator", "RCS1194:Implement exception constructors.", Justification = "<挂起>", Scope = "type", Target = "~T:Niacomsoft.Eips.Data.DbExecutionException")]
 [assembly: SuppressMessage("Roslynator", "RCS1194:Implement exception constructors.", Justification = "<挂起>", Scope = "type", Target = "~T:Niacomsoft.Eips.Security.IncorrectPasswordAlphabetLengthException")]
+[assembly: SuppressMessage("Roslynator", "RCS1194:Implement exception constructors.", Justification = "<挂起>", Scope = "type", Target = "~T:Niacomsoft.Eips.TypeAnnotationNotFoundException")]

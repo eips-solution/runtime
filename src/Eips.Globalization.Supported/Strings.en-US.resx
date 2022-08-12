@@ -295,4 +295,7 @@
   <data name="IncorrectPasswordAlphabetLengthException_default_message" xml:space="preserve">
     <value>Password alphabet length is incorrect. The minimum is "8".</value>
   </data>
+  <data name="TypeAnnotationNotFoundException_default_message" xml:space="preserve">
+    <value>Could not find annotation '{1}' on type '{0}'.</value>
+  </data>
 </root>

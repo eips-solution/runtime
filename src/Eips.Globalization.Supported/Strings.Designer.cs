@@ -637,6 +637,15 @@ namespace Niacomsoft.Eips.Globalization.Resources {
         }
         
         /// <summary>
+        ///   查找类似 未能在类型 “{0}” 中找到 &quot;{1}&quot; 类型的注解。 的本地化字符串。
+        /// </summary>
+        internal static string TypeAnnotationNotFoundException_default_message {
+            get {
+                return ResourceManager.GetString("TypeAnnotationNotFoundException_default_message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 警告 的本地化字符串。
         /// </summary>
         internal static string Warning {
