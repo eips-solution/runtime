@@ -37,6 +37,12 @@ namespace Niacomsoft.Eips.Runtime.Serializations
         /// <summary> 创建人姓名。 </summary>
         public const string Creator = "CreatedBy";
 
+        /// <summary> XML 序列化默认命名空间。 </summary>
+        public const string DefaultNamespace = "urn:dotnet.niacomsoft.eips";
+
+        /// <summary> XML 序列化默认命名空间前缀。 </summary>
+        public const string DefaultNamespacePrefix = "eips";
+
         /// <summary> 是否默认选项。 </summary>
         public const string DefaultOptions = "DefaultOptions";
 
