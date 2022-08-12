@@ -47,7 +47,12 @@ namespace Niacomsoft.Eips.Runtime.Serializations
         /// <summary> (异步的方法) 序列化 <typeparamref name="T" /> 类型的对象实例，并返回字节数据。 </summary>
         /// <typeparam name="T"> 引用类型。 </typeparam>
         /// <param name="obj"> <typeparamref name="T" /> 类型的对象实例。 </param>
-        /// <returns> 字节数组。 </returns>
+        /// <returns>
+        /// 字节数组。
+        /// <para>
+        /// 当 <paramref name="obj" /> 等于 <c> null </c> 时，将返回 <c> null </c>。
+        /// </para>
+        /// </returns>
         /// <seealso cref="Task{TResult}" />
         Task<byte[]> SerializeAsync<T>(T obj) where T : class, new();
     }
