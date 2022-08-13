@@ -5,7 +5,7 @@
     <ImplicitUsings>disable</ImplicitUsings>
     <Nullable>disable</Nullable>
     <AssemblyName>Niacomsoft.Eips.Extensions.Serializations.NewtonsoftJson</AssemblyName>
-    <RootNamespace>Niacomsoft.Eips.Runtime.Serializations.Extensions</RootNamespace>
+    <RootNamespace>Niacomsoft.Eips.Extensions.Runtime.Serializations</RootNamespace>
     <DocumentationFile>$(BaseOutputPath)$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
   </PropertyGroup>
 

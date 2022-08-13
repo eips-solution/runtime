@@ -7,7 +7,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 using System.Globalization;
 
-namespace Niacomsoft.Eips.Runtime.Serializations.Extensions
+namespace Niacomsoft.Eips.Extensions.Runtime.Serializations
 {
     /// <summary> 提供了默认的 JSON 序列化配置相关的方法。 </summary>
     internal class DefaultJsonSerializerSettings
