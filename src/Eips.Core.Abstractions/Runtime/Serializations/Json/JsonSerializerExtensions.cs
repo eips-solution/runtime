@@ -13,7 +13,7 @@ namespace Niacomsoft.Eips.Runtime.Serializations.Json
     /// <summary> 提供了 JSON 序列化扩展相关的方法。 </summary>
     /// <seealso cref="IJsonSerializerExtensions" />
     /// <seealso cref="Serializer" />
-    public abstract class JsonSerializerExtensions : Serializer, IJsonSerializerExtensions
+    public abstract partial class JsonSerializerExtensions : Serializer, IJsonSerializerExtensions
     {
         /// <summary>
         /// 从 JSON 字符串 <paramref name="jsonStr" /> 反序列化得到
