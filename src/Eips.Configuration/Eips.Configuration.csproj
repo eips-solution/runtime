@@ -9,4 +9,11 @@
     <DocumentationFile>$(BaseOutputPath)$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Eips.Common\Eips.Common.csproj" />
+    <ProjectReference Include="..\Eips.Configuration.Abstractions\Eips.Configuration.Abstractions.csproj" />
+    <ProjectReference Include="..\Eips.Core.Abstractions\Eips.Core.Abstractions.csproj" />
+    <ProjectReference Include="..\Eips.Globalization.Supported\Eips.Globalization.Supported.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -6,6 +6,7 @@
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Niacomsoft.Eips.Options;
+using System;
 
 namespace Niacomsoft.Eips.Configuration
 {
@@ -16,6 +17,11 @@ namespace Niacomsoft.Eips.Configuration
     /// <seealso cref="IConfigurableOptions" />
     public interface IObservableOptionsBroker<TOptions> where TOptions : class, IConfigurableOptions
     {
+        /// <summary> 配置选项变更事件。 </summary>
+        /// <seealso cref="EventHandler{TEventArgs}" />
+        /// <seealso cref="Tuple{T1, T2}" />
+        event EventHandler<Tuple<string, TOptions>> Changed;
+
         /// <summary> 用于记录配置变更的方法。 </summary>
         /// <value> 获取 <see cref="ILogger" /> 类型的对象实例，用于表示用于记录配置变更的方法。 </value>
         /// <seealso cref="ILogger" />
