@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net40; net45; netcoreapp3.1; netstandard2.1; net5.0; net6.0</TargetFrameworks>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <AssemblyName>Niacomsoft.Eips.Extensions.Serializations.NewtonsoftJson</AssemblyName>
+    <RootNamespace>Niacomsoft.Eips.Runtime.Serializations.Extensions</RootNamespace>
+    <DocumentationFile>$(BaseOutputPath)$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Eips.Common\Eips.Common.csproj" />
+    <ProjectReference Include="..\Eips.Core.Abstractions\Eips.Core.Abstractions.csproj" />
+    <ProjectReference Include="..\Eips.Globalization.Supported\Eips.Globalization.Supported.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -20,7 +20,6 @@ namespace Niacomsoft.Eips.Runtime.Serializations
     public sealed class XmlSerializer : Serializer
     {
         private readonly XmlSerializerNamespaces m_namespaceMgr;
-        private readonly XmlSerializeProvider m_provider;
 
         /// <summary> 用于初始化一个 <see cref="XmlSerializer" /> 类型的对象实例。 </summary>
         public XmlSerializer()
