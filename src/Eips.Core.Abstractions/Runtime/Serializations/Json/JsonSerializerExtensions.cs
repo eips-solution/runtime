@@ -116,6 +116,18 @@ namespace Niacomsoft.Eips.Runtime.Serializations.Json
             return StringUtilities.GetBytes(jsonStr);
         }
 
+        /// <summary> 序列化 <typeparamref name="T" /> 类型的对象实例，并写入流 <paramref name="serializeStream" />。 </summary>
+        /// <typeparam name="T"> 引用类型。 </typeparam>
+        /// <param name="obj"> <typeparamref name="T" /> 类型的对象实例。 </param>
+        /// <param name="serializeStream"> 派生自 <see cref="Stream" /> 类型的对象实例。 </param>
+        /// <seealso cref="Stream" />
+        public override void Serialize<T>(T obj, Stream serializeStream)
+        {
+            var bytes = Serialize<T>(obj);
+            if (ReferenceTypeEqualityComparer.NotNone(bytes))
+                serializeStream.Write(bytes, 0, bytes.Length);
+        }
+
         /// <summary> 序列化 <typeparamref name="T" /> 类型的对象实例，并获取 JSON 字符串。 </summary>
         /// <typeparam name="T"> 引用类型。 </typeparam>
         /// <param name="obj"> <typeparamref name="T" /> 类型的对象实例。 </param>
