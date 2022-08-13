@@ -10,6 +10,10 @@
 
 *基于 .NET 的 “企业私有 SaaS 服务” 运行时 SDK。*
 
+![GitHub tag (latest SemVer pre-release)](https://img.shields.io/github/v/tag/eips-solution/runtime?include_prereleases&label=lastest%20release&logo=github&style=flat-square) ![GitHub top language](https://img.shields.io/github/languages/top/eips-solution/runtime?style=flat-square) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/eips-solution/runtime?style=flat-square) ![GitHub issues](https://img.shields.io/github/issues/eips-solution/runtime?label=open%20issues&logo=github&style=flat-square) ![GitHub](https://img.shields.io/github/license/eips-solution/runtime?style=flat-square) ![GitHub forks](https://img.shields.io/github/forks/eips-solution/runtime?style=flat-square&logo=github) ![GitHub Repo stars](https://img.shields.io/github/stars/eips-solution/runtime?logo=github&style=flat-square) ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/eips-solution/runtime?label=commit%20times&style=flat-square) ![GitHub last commit](https://img.shields.io/github/last-commit/eips-solution/runtime?style=flat-square)
+
+![Alt](https://repobeats.axiom.co/api/embed/bd7a096ea20e5022e2497a4a1a7e6a09b8822a81.svg "Repobeats analytics image")
+
 - **开发环境 Development Environment**
   - Microsoft Windows 10
   - Microsoft [Visual Studio 2022 Community Edition](https://visualstudio.microsoft.com/zh-hans/thank-you-downloading-visual-studio/?sku=Community&channel=Release&version=VS2022&source=VSLandingPage&cid=2030&passive=false)
