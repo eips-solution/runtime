@@ -38,6 +38,12 @@
   - 命名空间：`Niacomsoft.Eips.Extensions.Runtime.Serializations`
   - NuGet 包名称：`{AssemblyName}`
   - 适用的 .NET 版本：`net40; net45; netcoreapp3.1; netstandard2.1; net5.0; net6.0`
+- 配置抽象（仅适用于 .NET Core 或者 .NET 5.0+）
+  - 项目名称：`Eips.Configuration.Abstractions`
+  - 程序集名称：`Niacomsoft.Eips.Configuration`
+  - 命名空间：`Niacomsoft.Eips.Configuration`
+  - NuGet 包名称：`{AssemblyName}`
+  - 适用的 .NET 版本：`netcoreapp3.1; netstandard2.1; net5.0; net6.0`
 - 配置（仅适用于 .NET Core 或者 .NET 5.0+）
   - 项目名称：`Eips.Configuration`
   - 程序集名称：`Niacomsoft.Eips.Configuration`
