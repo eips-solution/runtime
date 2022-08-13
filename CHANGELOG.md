@@ -1,4 +1,43 @@
 # CHANGELOG
+## [1.0.0-build.5](https://github.com/eips-solution/runtime/compare/v1.0.0-build.4...v1.0.0-build.5) (2022-08-13)
+
+
+### CODE STYLE
+
+* 修改了接口 IAsyncSerializer 和 ISerializer 中错误的参数命名。 ([7d004fc](https://github.com/eips-solution/runtime/commit/7d004fcfd3c092024e43820881afd9ae74848cb6))
+
+
+### REFACTOR
+
+* 修改了 JsonSerializerProperties 和 XmlSerializerProperties 命名空间。 ([838ef46](https://github.com/eips-solution/runtime/commit/838ef468fc0837fec1ae41de5751a840934f23ce))
+
+
+### DOCUMENTATION
+
+* 新增 NuGet 包依赖说明 PackageReferences.md。 ([8a1b4c3](https://github.com/eips-solution/runtime/commit/8a1b4c3f777f27ba85e1c0f6528e27f34a539941))
+
+
+### NEW FEATURE
+
+* 为 JsonSerializerExtensions 增加异步方法实现 JsonSerializerExtensions.Async.cs。 ([15949c2](https://github.com/eips-solution/runtime/commit/15949c2cbc7a1d48af4202f29c5a8960c2ebec06))
+* 新增 JSON 序列化程序 JsonSerializer。 ([3c087d7](https://github.com/eips-solution/runtime/commit/3c087d779610f9692c81aed2e28a9511d6beb244))
+* 新增 JSON 序列化扩展方法基类 JsonSerializerExtensions。 ([773db68](https://github.com/eips-solution/runtime/commit/773db68c6a7e26fbc49a3f028e46b5bf6a658354))
+* 新增 JSON 序列化扩展方法异步接口 IAsyncJsonSerializerExtensions。 ([858726f](https://github.com/eips-solution/runtime/commit/858726fb7567dc43f2d1b6622d14ef1af233757e))
+* 新增 Json 序列化扩展接口 IJsonSerializerExtensions。 ([5325064](https://github.com/eips-solution/runtime/commit/532506498212cc2a539d53c39c77950e7c735720))
+* 新增 Newtonsoft.Json 序列化默认设置 DefaultJsonSerializerSettings。 ([92457b4](https://github.com/eips-solution/runtime/commit/92457b4fca6719067648fbf00d9a4697e91f4dca))
+* 新增 Serializer 的异步方法实现 Serializer.Async。 ([d568dfc](https://github.com/eips-solution/runtime/commit/d568dfcd36b7ba915465a7b47f157b01ccc22f5a))
+* 新增 XML 序列化程序 XmlSerializer。 ([642d03a](https://github.com/eips-solution/runtime/commit/642d03a7b69a277c0cbcc6a35aa87015c2af9f16))
+* 新增二进制序列化 BinarySerializer。 ([4358013](https://github.com/eips-solution/runtime/commit/43580130a65da066591814bc3bc70a9169995296))
+* 新增数据序列化基类 Serializer。 ([769680c](https://github.com/eips-solution/runtime/commit/769680c2f2e9351c30c0d7886e35508f2460fbc8))
+* 新增序列化同步方法接口定义 ISerializer。 ([20c57fc](https://github.com/eips-solution/runtime/commit/20c57fcc6e27599afb39e0f42a28594e40e701fa))
+* 新增异步序列化接口 IAsyncSerializer。 ([6bf0f41](https://github.com/eips-solution/runtime/commit/6bf0f4120a1e14e40f10ebbbdf7c440208297fcc))
+
+
+### CHORE
+
+* 修改了 ISerializer 和 IAsyncSerializer 接口的方法注释。 ([7708cfd](https://github.com/eips-solution/runtime/commit/7708cfd680022db51ffd4f8a721a9438de4b39c5))
+* 修改了 NuGet 版本号。 ([8cf8851](https://github.com/eips-solution/runtime/commit/8cf8851360010155459251953c101f200f142d40))
+
 ## [1.0.0-build.4](https://github.com/eips-solution/runtime/compare/v1.0.0-build.3...v1.0.0-build.4) (2022-08-11)
 
 

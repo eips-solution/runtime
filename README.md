@@ -20,6 +20,7 @@
   - [THE MIT LICENSE](LICENSE.md)
   - [APPLICATION BLOCKS DESCRIPTION](docs/ApplicationBlocks.md)
   - [REFERENCES](docs/References.md)
+  - [PACKAGE REFERENCES](docs/PackageReferences.md)
 
 ----
 

@@ -296,4 +296,7 @@
   <data name="IncorrectPasswordAlphabetLengthException_default_message" xml:space="preserve">
     <value>密码字母表长度不正确。最小为 “8”。</value>
   </data>
+  <data name="TypeAnnotationNotFoundException_default_message" xml:space="preserve">
+    <value>未能在类型 “{0}” 中找到 "{1}" 类型的注解。</value>
+  </data>
 </root>
