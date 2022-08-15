@@ -7,3 +7,4 @@
 |---------|
 |[Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json)|
 |[Hashids.net](https://www.nuget.org/packages/Hashids.net)|
+|[Nanoid](https://www.nuget.org/packages/Nanoid)|

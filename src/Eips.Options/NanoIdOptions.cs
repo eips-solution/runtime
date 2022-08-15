@@ -31,14 +31,14 @@ namespace Niacomsoft.Eips.Options
 
         /// <summary> 用于初始化一个 <see cref="NanoIdOptions" /> 类型的对象实例。 </summary>
         /// <param name="size"> 生成 NanoId 的长度。 </param>
-        public NanoIdOptions(long? size) : this(c_defaultAlphabet, size)
+        public NanoIdOptions(int? size) : this(c_defaultAlphabet, size)
         {
         }
 
         /// <summary> 用于初始化一个 <see cref="NanoIdOptions" /> 类型的对象实例。 </summary>
         /// <param name="alphabet"> 生成 NanoId 的字母表。 </param>
         /// <param name="size"> 生成 NanoId 的长度。 </param>
-        public NanoIdOptions(string alphabet, long? size)
+        public NanoIdOptions(string alphabet, int? size)
         {
             Alphabet = ParameterGuard.SafeGet(alphabet, c_defaultAlphabet, EmptyCompareOptions.IncludeWhiteSpace);
             Size = ParameterGuard.SafeGet(size, c_defaultSize);
@@ -50,6 +50,6 @@ namespace Niacomsoft.Eips.Options
 
         /// <summary> 生成 NanoId 的长度。 </summary>
         /// <value> 设置或获取一个值，用于表示生成 NanoId 的长度。 </value>
-        public long Size { get; set; }
+        public int Size { get; set; }
     }
 }
