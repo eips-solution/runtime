@@ -38,6 +38,12 @@
   - 命名空间：`Niacomsoft.Eips.Extensions.Runtime.Serializations`
   - NuGet 包名称：`{AssemblyName}`
   - 适用的 .NET 版本：`net40; net45; netcoreapp3.1; netstandard2.1; net5.0; net6.0`
+- 配置抽象（仅适用于 .NET Core 或者 .NET 5.0+）
+  - 项目名称：`Eips.Configuration.Abstractions`
+  - 程序集名称：`Niacomsoft.Eips.Configuration`
+  - 命名空间：`Niacomsoft.Eips.Configuration`
+  - NuGet 包名称：`{AssemblyName}`
+  - 适用的 .NET 版本：`netcoreapp3.1; netstandard2.1; net5.0; net6.0`
 - 配置（仅适用于 .NET Core 或者 .NET 5.0+）
   - 项目名称：`Eips.Configuration`
   - 程序集名称：`Niacomsoft.Eips.Configuration`
@@ -57,15 +63,15 @@
   - NuGet 包名称：`{AssemblyName}`
   - 适用的 .NET 版本：`net40; netcoreapp3.1; netstandard2.1; net5.0; net6.0`
 - 配置选项
-  - 项目名称：`Eips.Configuration.Options`
-  - 程序集名称：`Niacomsoft.Eips.Configuration.Options`
-  - 命名空间：`Niacomsoft.Eips.Configuration.Options`
+  - 项目名称：`Eips.Options`
+  - 程序集名称：`Niacomsoft.Eips.Options`
+  - 命名空间：`Niacomsoft.Eips.Options`
   - NuGet 包名称：`{AssemblyName}`
   - 适用的 .NET 版本：`net40; netcoreapp3.1; netstandard2.1; net5.0; net6.0`
 - 核心扩展 - NANO-ID 生成
-  - 项目名称：`Eips.Core.Extensions.NanoIdGenerateUtilities`
+  - 项目名称：`Eips.Extensions.NanoIdGenerateUtilities`
   - 程序集名称：`Niacomsoft.Eips.Extensions.NanoIdGenerateUtilities`
-  - 命名空间：`Niacomsoft.Eips`
+  - 命名空间：`Niacomsoft.Eips.Extensions`
   - NuGet 包名称：`{AssemblyName}`
   - 适用的 .NET 版本：`netcoreapp3.1; netstandard2.1; net5.0; net6.0`
 - 依赖注入抽象

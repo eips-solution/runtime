@@ -15,6 +15,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eips.Extensions.Hashid", "E
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eips.Extensions.Serializations.NewtonsoftJson", "Eips.Extensions.Serializations.NewtonsoftJson\Eips.Extensions.Serializations.NewtonsoftJson.csproj", "{98A3C93A-580C-4781-B7D9-191ADC32927D}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eips.Configuration", "Eips.Configuration\Eips.Configuration.csproj", "{0E7175DD-82CA-4B2D-8994-3EC72E68F862}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eips.Configuration.Abstractions", "Eips.Configuration.Abstractions\Eips.Configuration.Abstractions.csproj", "{AE9587B1-B6DF-4896-B466-03A1D37EADE4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eips.Options", "Eips.Options\Eips.Options.csproj", "{0747390D-0184-4822-9635-6E4DD349542C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eips.Extensions.NanoIdGenerateUtilities", "Eips.Extensions.NanoIdGenerateUtilities\Eips.Extensions.NanoIdGenerateUtilities.csproj", "{97B2806B-B3D9-4684-BD07-690D801A10B8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +53,22 @@ Global
 		{98A3C93A-580C-4781-B7D9-191ADC32927D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98A3C93A-580C-4781-B7D9-191ADC32927D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98A3C93A-580C-4781-B7D9-191ADC32927D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E7175DD-82CA-4B2D-8994-3EC72E68F862}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E7175DD-82CA-4B2D-8994-3EC72E68F862}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E7175DD-82CA-4B2D-8994-3EC72E68F862}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E7175DD-82CA-4B2D-8994-3EC72E68F862}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE9587B1-B6DF-4896-B466-03A1D37EADE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE9587B1-B6DF-4896-B466-03A1D37EADE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE9587B1-B6DF-4896-B466-03A1D37EADE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE9587B1-B6DF-4896-B466-03A1D37EADE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0747390D-0184-4822-9635-6E4DD349542C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0747390D-0184-4822-9635-6E4DD349542C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0747390D-0184-4822-9635-6E4DD349542C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0747390D-0184-4822-9635-6E4DD349542C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97B2806B-B3D9-4684-BD07-690D801A10B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97B2806B-B3D9-4684-BD07-690D801A10B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97B2806B-B3D9-4684-BD07-690D801A10B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97B2806B-B3D9-4684-BD07-690D801A10B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

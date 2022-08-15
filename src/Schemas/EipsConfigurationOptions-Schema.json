@@ -1,0 +1,39 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "EnterpriseInPrivateSaas.ConfigurationOptions",
+    "description": "企业私有化 SaaS 服务配置选项 - 校验架构",
+    "type": "object",
+    "required": ["eips"],
+    "properties": {
+        "eips": {
+            "description": "企业私有化 SaaS 服务配置",
+            "type": "object",
+            "properties": {
+                "utilities": {
+                    "description": "企业私有化 SaaS 服务 - 工具配置",
+                    "type": "object",
+                    "properties": {
+                        "nanoid": {
+                            "description": "生成 NanoId 所需的配置选项",
+                            "type": "object",
+                            "properties": {
+                                "alphabet": {
+                                    "description": "生成 NanoId 所需的字母表",
+                                    "type": "string",
+                                    "minLength": 62,
+                                    "default": "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890_-"
+                                },
+                                "size": {
+                                    "description": "生成 NanoId 的长度",
+                                    "type": "integer",
+                                    "minimum": 8,
+                                    "default": 21
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

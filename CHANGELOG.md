@@ -1,4 +1,22 @@
 # CHANGELOG
+## [1.0.0-build.6](https://github.com/eips-solution/runtime/compare/v1.0.0-build.5...v1.0.0-build.6) (2022-08-15)
+
+
+### DOCUMENTATION
+
+* 修改了项目自述文档。 ([a0585fe](https://github.com/eips-solution/runtime/commit/a0585fe0b2eb57f83442ff88c5a1fd0ba131c99c))
+
+
+### NEW FEATURE
+
+* 完成了 NanoId 生成工具。 ([8a57774](https://github.com/eips-solution/runtime/commit/8a57774167edf19aab9c8cd7dbb6677b03dc2ea4))
+* 完成了配置选项类库。 ([d4f6dbe](https://github.com/eips-solution/runtime/commit/d4f6dbe990367ef323b8beced18d3fd380e3706d)), closes [#11](https://github.com/eips-solution/runtime/issues/11) [#12](https://github.com/eips-solution/runtime/issues/12)
+* 新增 NanoId 配置选项 NanoIdOptions。 ([80ae915](https://github.com/eips-solution/runtime/commit/80ae915f84135389a619d88f51e4bd1b6e8f9907))
+* 新增 NanoId 生成程序 NanoidGenerator。 ([6d6d988](https://github.com/eips-solution/runtime/commit/6d6d9886362fc9d71c56be8703653d83a1983825)), closes [#13](https://github.com/eips-solution/runtime/issues/13)
+* 新增配置抽象项目 Eips.Configuration.Abstractions.csproj。 ([7a010e1](https://github.com/eips-solution/runtime/commit/7a010e1cc840afb186b91854147bf4d9a22358b3))
+* 新增配置选项架构设计 EipsConfigurationOptions-Schema.json。 ([f701120](https://github.com/eips-solution/runtime/commit/f7011208157927a7e068b54ffa921f82bf9b880d))
+* 新增适用于 .NET Standard、.NET Core、.NET vNext 的配置实现 OptionsBroker 和 ObservableOptionsBroker。 ([bbfcf22](https://github.com/eips-solution/runtime/commit/bbfcf2260e0739011560034d3385665493702739))
+
 ## [1.0.0-build.5](https://github.com/eips-solution/runtime/compare/v1.0.0-build.4...v1.0.0-build.5) (2022-08-13)
 
 

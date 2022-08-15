@@ -1,0 +1,11 @@
+{
+    "$schema": "./EipsConfigurationOptions-Schema.json",
+    "eips": {
+        "utilities": {
+            "nanoid": {
+                "alphabet": "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890_-",
+                "size": 21
+            }
+        }
+    }
+}
