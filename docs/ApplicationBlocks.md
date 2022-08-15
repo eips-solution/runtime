@@ -63,9 +63,9 @@
   - NuGet 包名称：`{AssemblyName}`
   - 适用的 .NET 版本：`net40; netcoreapp3.1; netstandard2.1; net5.0; net6.0`
 - 配置选项
-  - 项目名称：`Eips.Configuration.Options`
-  - 程序集名称：`Niacomsoft.Eips.Configuration.Options`
-  - 命名空间：`Niacomsoft.Eips.Configuration.Options`
+  - 项目名称：`Eips.Options`
+  - 程序集名称：`Niacomsoft.Eips.Options`
+  - 命名空间：`Niacomsoft.Eips.Options`
   - NuGet 包名称：`{AssemblyName}`
   - 适用的 .NET 版本：`net40; netcoreapp3.1; netstandard2.1; net5.0; net6.0`
 - 核心扩展 - NANO-ID 生成
