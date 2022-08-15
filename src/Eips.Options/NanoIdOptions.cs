@@ -15,6 +15,9 @@ namespace Niacomsoft.Eips.Options
         private const string c_defaultAlphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890_-";
         private const int c_defaultSize = 0x15;
 
+        /// <summary> 配置选项标识。 </summary>
+        public const string Key = "eips:utilities:nanoid";
+
         /// <summary> 用于初始化一个 <see cref="NanoIdOptions" /> 类型的对象实例。 </summary>
         public NanoIdOptions() : this(c_defaultAlphabet, c_defaultSize)
         {
