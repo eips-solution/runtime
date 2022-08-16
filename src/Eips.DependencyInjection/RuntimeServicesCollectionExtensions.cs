@@ -5,6 +5,7 @@
 
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Niacomsoft.Eips.Configuration;
 using Niacomsoft.Eips.Extensions;
 using Niacomsoft.Eips.Extensions.Runtime.Serializations;
 using Niacomsoft.Eips.Options;
@@ -56,7 +57,8 @@ namespace Niacomsoft.Eips.DependencyInjection
                     .AddTransient<AESAlgorithmsProvider>()
                     .AddTransient<IHashIdCryptographyKeyProvider, HashIdCryptographyKeyProvider>()
                     .AddTransient<Int32HashFormatter>()
-                    .AddTransient<Int64HashFormatter>();
+                    .AddTransient<Int64HashFormatter>()
+                    .AddTransient<IObservableOptionsBroker<NanoIdOptions>, ObservableOptionsBroker<NanoIdOptions>>();
         }
 
         /// <summary> 配置运行时服务。 </summary>
