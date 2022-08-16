@@ -1,4 +1,16 @@
 # CHANGELOG
+## [1.0.0-build.7](https://github.com/eips-solution/runtime/compare/v1.0.0-build.6...v1.0.0-build.7) (2022-08-16)
+
+
+### NEW FEATURE
+
+* 新增创建异步哈希算法工厂方法。 ([4e45604](https://github.com/eips-solution/runtime/commit/4e45604c28dda86737e189c607f6a000c7e7eadc))
+* 新增依赖注入项目。 ([2e1ba9b](https://github.com/eips-solution/runtime/commit/2e1ba9b41b236fdc30b21d7050f906105946bf25))
+* 新增运行时服务注册扩展服务 RuntimeServicesCollectionExtensions。 ([e492d47](https://github.com/eips-solution/runtime/commit/e492d47baa386a2682c0867eb34e234059e5adab))
+* 新增组合式 API 接口 IFluentInterface。 ([1079ce1](https://github.com/eips-solution/runtime/commit/1079ce1f6d783de263f8d7e277f2843834aa7bdd))
+* 新增组合式 API 实现 FluentInterface。 ([9106442](https://github.com/eips-solution/runtime/commit/910644218083d9bbc6fe1000729a1a1b76196b0f))
+* 修改了 RuntimeServicesCollectionExtensions，增加了 ConfigureRuntimeConfigurationOptions 方法。 ([da4ba18](https://github.com/eips-solution/runtime/commit/da4ba18cfb36a7aa92d75185e933154694696b54))
+
 ## [1.0.0-build.6](https://github.com/eips-solution/runtime/compare/v1.0.0-build.5...v1.0.0-build.6) (2022-08-15)
 
 

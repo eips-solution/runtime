@@ -23,6 +23,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eips.Options", "Eips.Option
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eips.Extensions.NanoIdGenerateUtilities", "Eips.Extensions.NanoIdGenerateUtilities\Eips.Extensions.NanoIdGenerateUtilities.csproj", "{97B2806B-B3D9-4684-BD07-690D801A10B8}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eips.DependencyInjection", "Eips.DependencyInjection\Eips.DependencyInjection.csproj", "{C6DF5775-524B-4B44-B3C8-4CD4202507F2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eips.DependencyInjection.Abstractions", "Eips.DependencyInjection.Abstractions\Eips.DependencyInjection.Abstractions.csproj", "{A44BD2E2-FCA8-4385-8D61-7009F9C838BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,12 +73,20 @@ Global
 		{97B2806B-B3D9-4684-BD07-690D801A10B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97B2806B-B3D9-4684-BD07-690D801A10B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97B2806B-B3D9-4684-BD07-690D801A10B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6DF5775-524B-4B44-B3C8-4CD4202507F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6DF5775-524B-4B44-B3C8-4CD4202507F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6DF5775-524B-4B44-B3C8-4CD4202507F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6DF5775-524B-4B44-B3C8-4CD4202507F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A44BD2E2-FCA8-4385-8D61-7009F9C838BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A44BD2E2-FCA8-4385-8D61-7009F9C838BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A44BD2E2-FCA8-4385-8D61-7009F9C838BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A44BD2E2-FCA8-4385-8D61-7009F9C838BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {D210EF73-BAAF-4871-9344-4BE9816F6ADA}
 		RESX_NeutralResourcesLanguage = zh-Hans
+		SolutionGuid = {D210EF73-BAAF-4871-9344-4BE9816F6ADA}
 	EndGlobalSection
 EndGlobal

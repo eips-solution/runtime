@@ -79,7 +79,7 @@
   - 程序集名称：`Niacomsoft.Eips.DependencyInjection.Abstractions`
   - 命名空间：`Niacomsoft.Eips.DependencyInjection`
   - NuGet 包名称：`{AssemblyName}`
-  - 适用的 .NET 版本：`net40; netcoreapp3.1; netstandard2.1; net5.0; net6.0`
+  - 适用的 .NET 版本：`net40; net45; netcoreapp3.1; netstandard2.1; net5.0; net6.0`
 - 依赖注入（仅适用于 .NET Core 或者 .NET 5.0+）
   - 项目名称：`Eips.DependencyInjection`
   - 程序集名称：`Niacomsoft.Eips.DependencyInjection`

@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netcoreapp3.1; netstandard2.1; net5.0; net6.0</TargetFrameworks>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <AssemblyName>Niacomsoft.Eips.DependencyInjection</AssemblyName>
+    <RootNamespace>Niacomsoft.Eips.DependencyInjection</RootNamespace>
+    <DocumentationFile>$(BaseOutputPath)$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Eips.Common\Eips.Common.csproj" />
+    <ProjectReference Include="..\Eips.Configuration.Abstractions\Eips.Configuration.Abstractions.csproj" />
+    <ProjectReference Include="..\Eips.Configuration\Eips.Configuration.csproj" />
+    <ProjectReference Include="..\Eips.Core.Abstractions\Eips.Core.Abstractions.csproj" />
+    <ProjectReference Include="..\Eips.Core\Eips.Core.csproj" />
+    <ProjectReference Include="..\Eips.DependencyInjection.Abstractions\Eips.DependencyInjection.Abstractions.csproj" />
+    <ProjectReference Include="..\Eips.Extensions.Hashid\Eips.Extensions.Hashid.csproj" />
+    <ProjectReference Include="..\Eips.Extensions.NanoIdGenerateUtilities\Eips.Extensions.NanoIdGenerateUtilities.csproj" />
+    <ProjectReference Include="..\Eips.Extensions.Serializations.NewtonsoftJson\Eips.Extensions.Serializations.NewtonsoftJson.csproj" />
+    <ProjectReference Include="..\Eips.Globalization.Supported\Eips.Globalization.Supported.csproj" />
+    <ProjectReference Include="..\Eips.Options\Eips.Options.csproj" />
+  </ItemGroup>
+
+</Project>
