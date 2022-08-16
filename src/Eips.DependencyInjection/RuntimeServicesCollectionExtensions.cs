@@ -3,9 +3,11 @@
  * LICENSED UNDER THE MIT LICENSE. SEE LICENSE FILE IN THE PROJECT ROOT FOR FULL LICENSE INFORMATION.                                      *
 \* *************************************************************************************************************************************** */
 
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Niacomsoft.Eips.Extensions;
 using Niacomsoft.Eips.Extensions.Runtime.Serializations;
+using Niacomsoft.Eips.Options;
 using Niacomsoft.Eips.Reflection;
 using Niacomsoft.Eips.Runtime.Serializations;
 using Niacomsoft.Eips.Security;
@@ -57,6 +59,21 @@ namespace Niacomsoft.Eips.DependencyInjection
                     .AddTransient<Int64HashFormatter>();
         }
 
+        /// <summary> 配置运行时服务。 </summary>
+        /// <param name="services">
+        /// 实现了 <see cref="IServiceCollection" /> 类型接口的对象实例。
+        /// </param>
+        /// <seealso cref="IServiceCollection" />
+        private static void ConfigureRuntimeConfigurationOptions(IServiceCollection services)
+        {
+            services.AddOptions<EipsOptions>()
+                    .Configure<IConfiguration>((opt, config) => config.Bind(EipsOptions.Key, opt));
+            services.AddOptions<UtilitiesOptions>()
+                    .Configure<IConfiguration>((opt, config) => config.Bind($"{EipsOptions.Key}:{UtilitiesOptions.Key}", opt));
+            services.AddOptions<NanoIdOptions>()
+                    .Configure<IConfiguration>((opt, config) => config.Bind($"{EipsOptions.Key}:{UtilitiesOptions.Key}:{NanoIdOptions.Key}", opt));
+        }
+
         /// <summary> 注册 EIPS 运行时相关服务。 </summary>
         /// <param name="services">
         /// 实现了 <see cref="IServiceCollection" /> 类型接口的对象实例。
@@ -67,6 +84,7 @@ namespace Niacomsoft.Eips.DependencyInjection
         {
             AddSingletonRuntimeServicesImpl(services);
             AddTransientRuntimeServicesImpl(services);
+            ConfigureRuntimeConfigurationOptions(services);
 
             return services;
         }
