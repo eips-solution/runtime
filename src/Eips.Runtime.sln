@@ -27,6 +27,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eips.Globalization.Supporte
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eips.Options", "Eips.Options\Eips.Options.csproj", "{2DD6B416-78AD-461C-9D3B-95A5469C04F9}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eips.AdoNet.Abstractions", "Eips.AdoNet.Abstractions\Eips.AdoNet.Abstractions.csproj", "{F772AE4E-C8DF-41BE-8B91-404F7D689B06}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{2DD6B416-78AD-461C-9D3B-95A5469C04F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2DD6B416-78AD-461C-9D3B-95A5469C04F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2DD6B416-78AD-461C-9D3B-95A5469C04F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F772AE4E-C8DF-41BE-8B91-404F7D689B06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F772AE4E-C8DF-41BE-8B91-404F7D689B06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F772AE4E-C8DF-41BE-8B91-404F7D689B06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F772AE4E-C8DF-41BE-8B91-404F7D689B06}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

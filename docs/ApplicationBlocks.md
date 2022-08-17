@@ -92,3 +92,15 @@
   - 命名空间：`Niacomsoft.Eips.DependencyInjection`
   - NuGet 包名称：`{AssemblyName}`
   - 适用的 .NET 版本：`net40`
+- 数据库访问组件抽象
+  - 项目名称：`Eips.AdoNet.Abstractions`
+  - 程序集名称：`Niacomsoft.Eips.Data.Abstractions`
+  - 命名空间：`Niacomsoft.Eips.Data`
+  - NuGet 包名称：`{AssemblyName}`
+  - 适用的 .NET 版本：`net40; net45; netcoreapp3.1; netstandard2.1; net5.0; net6.0`
+- 数据库访问组件 for Microsoft SQL Server
+  - 项目名称：`Eips.AdoNet.SQLServer`
+  - 程序集名称：`Niacomsoft.Eips.Data.SQLServer`
+  - 命名空间：`Niacomsoft.Eips.Data.SqlClient`
+  - NuGet 包名称：`{AssemblyName}`
+  - 适用的 .NET 版本：`net40; net45; netcoreapp3.1; netstandard2.1; net5.0; net6.0`
