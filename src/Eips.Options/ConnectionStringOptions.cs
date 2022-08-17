@@ -11,6 +11,8 @@ namespace Niacomsoft.Eips.Options
     /// </summary>
     public sealed class ConnectionStringOptions
     {
+        private int? m_timeout;
+
         /// <summary> 连接串。 </summary>
         /// <value> 设置或获取一个字符串，用于表示连接串。 </value>
         public string ConnectionString { get; set; }
@@ -30,5 +32,13 @@ namespace Niacomsoft.Eips.Options
         /// <summary> 只读的连接串。 </summary>
         /// <value> 设置或获取一个字符串数组，用于表示只读的连接串。 </value>
         public string[] ReadonlyConnectionStrings { get; set; }
+
+        /// <summary> 连接超时（单位：秒）。 </summary>
+        /// <value> 设置或获取一个值，用于表示连接超时（单位：秒）。 </value>
+        public int? Timeout
+        {
+            get { return ParameterGuard.SafeGet(m_timeout, 30); }
+            set { m_timeout = value; }
+        }
     }
 }

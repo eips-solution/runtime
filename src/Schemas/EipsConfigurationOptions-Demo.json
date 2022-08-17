@@ -13,7 +13,8 @@
                 "connectionString": "MySQL Connection String",
                 "providerName": "System.Data.MySQL",
                 "description": "MySQL 数据库连接",
-                "readonlyConnectionStrings": ["MySQL ReadOnly Connection String"]
+                "readonlyConnectionStrings": ["MySQL ReadOnly Connection String"],
+                "timeout": 30
             }
         ],
         "defaultConnection": "MySQL Connection"

@@ -61,6 +61,12 @@
                                 "description": "连接串描述信息",
                                 "minLength": 0
                             },
+                            "timeout": {
+                                "type": "integer",
+                                "description": "连接超时（单位：秒）",
+                                "minimum": 0,
+                                "default": 30
+                            },
                             "readonlyConnectionStrings": {
                                 "type": "array",
                                 "description": "只读的连接串",
