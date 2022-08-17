@@ -11,3 +11,6 @@
 using System.Diagnostics.CodeAnalysis;
 
 [assembly: SuppressMessage("Design", "Ex0100:Member may throw undocumented exception", Justification = "<挂起>", Scope = "member", Target = "~M:Niacomsoft.Eips.Data.DbProviderExtensions.GetProviderName(Niacomsoft.Eips.Data.DbProvider)~System.String")]
+[assembly: SuppressMessage("Design", "Ex0200:Member is documented as throwing exception not documented on member in base or interface type", Justification = "<挂起>", Scope = "member", Target = "~M:Niacomsoft.Eips.Data.Common.Database`5.AddParameter(`2,`3)")]
+[assembly: SuppressMessage("Roslynator", "RCS1001:Add braces (when expression spans over multiple lines).", Justification = "<挂起>", Scope = "member", Target = "~M:Niacomsoft.Eips.Data.Common.Database`5.AddParameters(`2,System.Collections.Generic.IEnumerable{`3})")]
+[assembly: SuppressMessage("Design", "Ex0100:Member may throw undocumented exception", Justification = "<挂起>", Scope = "member", Target = "~M:Niacomsoft.Eips.Data.Common.Database`5.AddParameters(`2,System.Collections.Generic.IEnumerable{`3})")]
