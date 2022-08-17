@@ -32,6 +32,50 @@
                             }
                         }
                     }
+                },
+                "connectionStrings": {
+                    "description": "连接串配置",
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "required": ["name", "connectionString"],
+                        "properties": {
+                            "name": {
+                                "type": "string",
+                                "description": "连接串名称",
+                                "minLength": 1
+                            },
+                            "connectionString": {
+                                "description": "连接串",
+                                "type": "string",
+                                "minLength": 1
+                            },
+                            "providerName": {
+                                "type": "string",
+                                "description": "连接程序名称",
+                                "enum": ["System.Data.SqlClient", "System.Data.MySQL", "System.Data.PostgreSQL", "System.Data.Oracle", "System.Data.SQLite", "System.Data.MariaDB", "System.Data.Redis", "System.Data.MongoDB"],
+                                "default": "System.Data.SqlClient"
+                            },
+                            "description": {
+                                "type": "string",
+                                "description": "连接串描述信息",
+                                "minLength": 0
+                            },
+                            "readonlyConnectionStrings": {
+                                "type": "array",
+                                "description": "只读的连接串",
+                                "items": {
+                                    "type": "string",
+                                    "minLength": 1
+                                }
+                            }
+                        }
+                    }
+                },
+                "defaultConnection": {
+                    "description": "默认的连接名称",
+                    "type": "string",
+                    "minLength": 1
                 }
             }
         }

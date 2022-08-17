@@ -6,6 +6,16 @@
                 "alphabet": "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890_-",
                 "size": 21
             }
-        }
+        },
+        "connectionStrings": [
+            {
+                "name": "MySQL Connection",
+                "connectionString": "MySQL Connection String",
+                "providerName": "System.Data.MySQL",
+                "description": "MySQL 数据库连接",
+                "readonlyConnectionStrings": ["MySQL ReadOnly Connection String"]
+            }
+        ],
+        "defaultConnection": "MySQL Connection"
     }
 }
