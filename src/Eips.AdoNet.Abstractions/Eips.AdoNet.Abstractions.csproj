@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFrameworks>net40; net45; netcoreapp3.1; netstandard2.1; net5.0; net6.0</TargetFrameworks>
@@ -8,5 +8,29 @@
 		<RootNamespace>Niacomsoft.Eips.Data</RootNamespace>
 		<DocumentationFile>$(BaseOutputPath)$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
 	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Eips.Common\Eips.Common.csproj" />
+		<ProjectReference Include="..\Eips.Core.Abstractions\Eips.Core.Abstractions.csproj" />
+		<ProjectReference Include="..\Eips.Core\Eips.Core.csproj" />
+		<ProjectReference Include="..\Eips.Globalization.Supported\Eips.Globalization.Supported.csproj" />
+		<ProjectReference Include="..\Eips.Options\Eips.Options.csproj" />
+	</ItemGroup>
+
+	<ItemGroup Condition="($(TargetFramework) == 'netstandard2.1')">
+		<ProjectReference Include="..\Eips.Configuration.Abstractions\Eips.Configuration.Abstractions.csproj" />
+	</ItemGroup>
+
+	<ItemGroup Condition="($(TargetFramework) == 'netcoreapp3.1')">
+		<ProjectReference Include="..\Eips.Configuration.Abstractions\Eips.Configuration.Abstractions.csproj" />
+	</ItemGroup>
+
+	<ItemGroup Condition="($(TargetFramework) == 'net5.0')">
+		<ProjectReference Include="..\Eips.Configuration.Abstractions\Eips.Configuration.Abstractions.csproj" />
+	</ItemGroup>
+
+	<ItemGroup Condition="($(TargetFramework) == 'net6.0')">
+		<ProjectReference Include="..\Eips.Configuration.Abstractions\Eips.Configuration.Abstractions.csproj" />
+	</ItemGroup>
 
 </Project>
