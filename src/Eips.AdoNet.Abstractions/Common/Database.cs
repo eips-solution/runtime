@@ -11,19 +11,11 @@ using System.Data;
 namespace Niacomsoft.Eips.Data.Common
 {
     /// <summary> 提供了数据库访问相关的基本方法。 </summary>
-    /// <typeparam name="TDbConnection">
-    /// 实现了 <see cref="IDbConnection" /> 接口的类型。
-    /// </typeparam>
-    /// <typeparam name="TDbTransaction">
-    /// 实现了 <see cref="IDbTransaction" /> 接口的类型。
-    /// </typeparam>
+    /// <typeparam name="TDbConnection"> 实现了 <see cref="IDbConnection" /> 接口的类型。 </typeparam>
+    /// <typeparam name="TDbTransaction"> 实现了 <see cref="IDbTransaction" /> 接口的类型。 </typeparam>
     /// <typeparam name="TDbCommand"> 实现了 <see cref="IDbCommand" /> 接口的类型。 </typeparam>
-    /// <typeparam name="TDataParameter">
-    /// 实现了 <see cref="IDataParameter" /> 类型接口的对象实例。
-    /// </typeparam>
-    /// <typeparam name="TDataReader">
-    /// 实现了 <see cref="IDataReader" /> 接口的类型。
-    /// </typeparam>
+    /// <typeparam name="TDataParameter"> 实现了 <see cref="IDataParameter" /> 类型接口的对象实例。 </typeparam>
+    /// <typeparam name="TDataReader"> 实现了 <see cref="IDataReader" /> 接口的类型。 </typeparam>
     public abstract class Database<TDbConnection, TDbTransaction, TDbCommand, TDataParameter, TDataReader>
         : IDatabase<TDbConnection, TDbTransaction, TDbCommand, TDataParameter, TDataReader>
         where TDbTransaction : IDbTransaction
@@ -32,14 +24,12 @@ namespace Niacomsoft.Eips.Data.Common
         where TDataReader : IDataReader
     {
         /// <summary>
-        /// 用于初始化一个
-        /// <see cref="Database{TDbConnection, TDbTransaction, TDbCommand, TDataParameter, TDataReader}" /> 类型的对象实例。
+        /// 用于初始化一个 <see cref="Database{TDbConnection, TDbTransaction, TDbCommand, TDataParameter, TDataReader}" /> 类型的对象实例。
         /// </summary>
         /// <param name="connectionString"> 数据库连接串。 </param>
         /// <param name="connectionTimeout"> 数据库连接超时设置（单位：秒）。 </param>
         /// <exception cref="ArgumentException">
-        /// 当 <paramref name="connectionString" /> 等于 <c> null </c>、
-        /// <see cref="string.Empty" /> 或者空格符时，将引发此类型的异常。
+        /// 当 <paramref name="connectionString" /> 等于 <c> null </c>、 <see cref="string.Empty" /> 或者空格符时，将引发此类型的异常。
         /// </exception>
         protected Database(string connectionString, int connectionTimeout)
         {
@@ -52,22 +42,6 @@ namespace Niacomsoft.Eips.Data.Common
             ConnectionString = connectionString;
             Timeout = connectionTimeout;
         }
-
-        /// <summary> 数据库连接。 </summary>
-        /// <value> 设置或获取 <typeparamref name="TDbConnection" /> 类型的对象实例，用于表示数据库连接。 </value>
-        /// <seealso cref="IDbConnection" />
-        protected abstract TDbConnection ConnectionImplementation { get; set; }
-
-        /// <summary> 创建数据库连接。 </summary>
-        /// <returns> <typeparamref name="TDbConnection" /> 类型的对象实例。 </returns>
-        protected abstract TDbConnection CreateConnection();
-
-        /// <summary> 用于引发 <see cref="ConnectionStateChanged" /> 事件。 </summary>
-        /// <param name="state"> <see cref="ConnectionState" /> 类型的值。 </param>
-        /// <seealso cref="ConnectionStateChanged" />
-        /// <seealso cref="ConnectionState" />
-        protected virtual void OnConnectionStateChanged(ConnectionState state)
-            => ConnectionStateChanged?.Invoke(this, new ConnectionStateChangedEventArgs(state));
 
         /// <summary> 数据库连接状态变更事件。 </summary>
         /// <seealso cref="EventHandler{TEventArgs}" />
@@ -98,6 +72,11 @@ namespace Niacomsoft.Eips.Data.Common
             get;
         }
 
+        /// <summary> 数据库连接。 </summary>
+        /// <value> 设置或获取 <typeparamref name="TDbConnection" /> 类型的对象实例，用于表示数据库连接。 </value>
+        /// <seealso cref="IDbConnection" />
+        protected abstract TDbConnection ConnectionImplementation { get; set; }
+
         /// <summary> 向 <paramref name="cmd" /> 添加参数 <paramref name="parameter" />。 </summary>
         /// <param name="cmd">
         /// 数据库命令。
@@ -109,12 +88,8 @@ namespace Niacomsoft.Eips.Data.Common
         /// </param>
         /// <seealso cref="IDbCommand" />
         /// <seealso cref="IDataParameter" />
-        /// <exception cref="ArgumentNullException">
-        /// 当 <paramref name="cmd" /> 等于 <c> null </c> 时，将引发此类型的异常。
-        /// </exception>
-        /// <exception cref="NotSupportedException">
-        /// 当调用 <see cref="IDbCommand.Parameters" />.Add 方法时，可能引发此类型的异常。
-        /// </exception>
+        /// <exception cref="ArgumentNullException"> 当 <paramref name="cmd" /> 等于 <c> null </c> 时，将引发此类型的异常。 </exception>
+        /// <exception cref="NotSupportedException"> 当调用 <see cref="IDbCommand.Parameters" />.Add 方法时，可能引发此类型的异常。 </exception>
         public virtual void AddParameter(TDbCommand cmd, TDataParameter parameter)
         {
             if (ReferenceTypeEqualityComparer.None(cmd))
@@ -123,9 +98,7 @@ namespace Niacomsoft.Eips.Data.Common
                 cmd.Parameters.Add(parameter);
         }
 
-        /// <summary>
-        /// 向 <paramref name="cmd" /> 添加参数 <paramref name="parameters" /> 集合。
-        /// </summary>
+        /// <summary> 向 <paramref name="cmd" /> 添加参数 <paramref name="parameters" /> 集合。 </summary>
         /// <param name="cmd">
         /// 数据库命令。
         /// <para> <typeparamref name="TDbCommand" /> 类型的对象实例。 </para>
@@ -137,9 +110,7 @@ namespace Niacomsoft.Eips.Data.Common
         /// <seealso cref="IDbCommand" />
         /// <seealso cref="IDataParameter" />
         /// <seealso cref="IEnumerable{T}" />
-        /// <exception cref="ArgumentNullException">
-        /// 当 <paramref name="cmd" /> 等于 <c> null </c> 时，将引发此类型的异常。
-        /// </exception>
+        /// <exception cref="ArgumentNullException"> 当 <paramref name="cmd" /> 等于 <c> null </c> 时，将引发此类型的异常。 </exception>
         public virtual void AddParameters(TDbCommand cmd, IEnumerable<TDataParameter> parameters)
         {
             if (ReferenceTypeEqualityComparer.NotNone(parameters))
@@ -163,9 +134,7 @@ namespace Niacomsoft.Eips.Data.Common
         /// <para> <typeparamref name="TDbTransaction" /> 类型的对象实例。 </para>
         /// </param>
         /// <seealso cref="IDbTransaction" />
-        /// <exception cref="ArgumentNullException">
-        /// 当 <paramref name="transaction" /> 等于 <c> null </c> 时，将引发此类型的异常。
-        /// </exception>
+        /// <exception cref="ArgumentNullException"> 当 <paramref name="transaction" /> 等于 <c> null </c> 时，将引发此类型的异常。 </exception>
         public abstract void Commit(TDbTransaction transaction);
 
         /// <summary> 创建数据库命令。 </summary>
@@ -279,8 +248,7 @@ namespace Niacomsoft.Eips.Data.Common
         public abstract TDbCommand CreateStoredProcedure(string storedProcedureName, int cmdTimeout = 0, params TDataParameter[] parameters);
 
         /// <summary>
-        /// 释放
-        /// <see cref="Database{TDbConnection, TDbTransaction, TDbCommand, TDataParameter, TDataReader}" /> 类型的对象实例所占用的空间。
+        /// 释放 <see cref="Database{TDbConnection, TDbTransaction, TDbCommand, TDataParameter, TDataReader}" /> 类型的对象实例所占用的空间。
         /// </summary>
         public abstract void Dispose();
 
@@ -407,9 +375,18 @@ namespace Niacomsoft.Eips.Data.Common
         /// <para> <typeparamref name="TDbTransaction" /> 类型的对象实例。 </para>
         /// </param>
         /// <seealso cref="IDbTransaction" />
-        /// <exception cref="ArgumentNullException">
-        /// 当 <paramref name="transaction" /> 等于 <c> null </c> 时，将引发此类型的异常。
-        /// </exception>
+        /// <exception cref="ArgumentNullException"> 当 <paramref name="transaction" /> 等于 <c> null </c> 时，将引发此类型的异常。 </exception>
         public abstract void Rollback(TDbTransaction transaction);
+
+        /// <summary> 创建数据库连接。 </summary>
+        /// <returns> <typeparamref name="TDbConnection" /> 类型的对象实例。 </returns>
+        protected abstract TDbConnection CreateConnection();
+
+        /// <summary> 用于引发 <see cref="ConnectionStateChanged" /> 事件。 </summary>
+        /// <param name="state"> <see cref="ConnectionState" /> 类型的值。 </param>
+        /// <seealso cref="ConnectionStateChanged" />
+        /// <seealso cref="ConnectionState" />
+        protected virtual void OnConnectionStateChanged(ConnectionState state)
+            => ConnectionStateChanged?.Invoke(this, new ConnectionStateChangedEventArgs(state));
     }
 }
