@@ -14,7 +14,8 @@ namespace Niacomsoft.Eips.Data.Common
     /// <summary> 提供了访问数据库相关的基本方法。 </summary>
     /// <seealso cref="IDisposable" />
     /// <seealso cref="IDbConnectionInterface" />
-    public abstract class Database : IDbConnectionInterface, IDisposable
+    /// <seealso cref="IDbConnectionAsyncInterface" />
+    public abstract partial class Database : IDbConnectionInterface, IDisposable
     {
         /// <summary> 用于初始化一个 <see cref="Database" /> 类型的对象实例。 </summary>
         /// <param name="connectionString"> 数据库连接串。 </param>
