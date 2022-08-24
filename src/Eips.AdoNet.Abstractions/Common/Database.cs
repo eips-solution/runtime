@@ -15,7 +15,9 @@ namespace Niacomsoft.Eips.Data.Common
     /// <seealso cref="IDisposable" />
     /// <seealso cref="IDbConnectionInterface" />
     /// <seealso cref="IDbConnectionAsyncInterface" />
-    public abstract partial class Database : IDbConnectionInterface, IDisposable
+    /// <seealso cref="IDbTransactionInterface" />
+    /// <seealso cref="IDbTransactionAsyncInterface" />
+    public abstract partial class Database : IDbConnectionInterface, IDbTransactionInterface, IDisposable
     {
         /// <summary> 用于初始化一个 <see cref="Database" /> 类型的对象实例。 </summary>
         /// <param name="connectionString"> 数据库连接串。 </param>
@@ -80,8 +82,32 @@ namespace Niacomsoft.Eips.Data.Common
         /// <value> 设置或获取一个值，用于表示数据库连接是否已经打开。 </value>
         protected virtual bool IsOpened { get; set; }
 
+        /// <summary> 启用一个数据库事务。 </summary>
+        /// <param name="isolation">
+        /// 事务隔离级别。
+        /// <para> 可为空的 <see cref="IsolationLevel" /> 类型的值。 </para>
+        /// </param>
+        /// <returns>
+        /// 数据库事务对象实例。
+        /// <para> 实现了 <see cref="IDbTransaction" /> 类型接口的对象实例。 </para>
+        /// </returns>
+        /// <seealso cref="IsolationLevel" />
+        /// <seealso cref="IDbTransaction" />
+        public virtual IDbTransaction BeginTransaction(IsolationLevel? isolation = null)
+        {
+            InternalOpen();
+
+            return isolation.HasValue ? Connection.BeginTransaction(isolation.Value) : Connection.BeginTransaction();
+        }
+
         /// <summary> 关闭数据库连接。 </summary>
         public virtual void Close() => InternalClose();
+
+        /// <summary> 提交一个数据库事务。 </summary>
+        /// <param name="transaction"> 实现了 <see cref="IDbTransaction" /> 类型接口的对象实例。 </param>
+        /// <seealso cref="IDbTransaction" />
+        /// <exception cref="Exception"> 当调用 <see cref="IDbTransaction.Commit" /> 时，可能引发此类型的异常。 </exception>
+        public virtual void Commit(IDbTransaction transaction) => transaction?.Commit();
 
         /// <summary> 执行与释放或重置非托管资源关联的应用程序定义的任务。 </summary>
         public void Dispose()
@@ -92,6 +118,12 @@ namespace Niacomsoft.Eips.Data.Common
 
         /// <summary> 打开数据库连接。 </summary>
         public virtual void Open() => InternalOpen();
+
+        /// <summary> 回滚一个数据库事务。 </summary>
+        /// <param name="transaction"> 实现了 <see cref="IDbTransaction" /> 类型接口的对象实例。 </param>
+        /// <seealso cref="IDbTransaction" />
+        /// <exception cref="Exception"> 当调用 <see cref="IDbTransaction.Rollback" /> 方法时，可能引发此类型的异常。 </exception>
+        public virtual void Rollback(IDbTransaction transaction) => transaction?.Rollback();
 
         /// <summary> 执行与释放或重置非托管资源关联的应用程序定义的任务。 </summary>
         /// <param name="disposing"> 是否释放。 </param>
@@ -173,8 +205,5 @@ namespace Niacomsoft.Eips.Data.Common
 
         /// <summary> 重置所有的内部数据库组件。 </summary>
         protected abstract void ResetComponents();
-
-        // // TODO: 仅当“Dispose(bool disposing)”拥有用于释放未托管资源的代码时才替代终结器 ~Database() { // 不要更改此代码。请将清理代码放入“Dispose(bool
-        // disposing)”方法中 Dispose(disposing: false); }
     }
 }

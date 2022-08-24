@@ -9,3 +9,5 @@
 using System.Diagnostics.CodeAnalysis;
 
 [assembly: SuppressMessage("Design", "Ex0100:Member may throw undocumented exception", Justification = "<挂起>", Scope = "member", Target = "~M:Niacomsoft.Eips.Data.DbProviderExtensions.GetProviderName(Niacomsoft.Eips.Data.DbProvider)~System.String")]
+[assembly: SuppressMessage("Design", "Ex0200:Member is documented as throwing exception not documented on member in base or interface type", Justification = "<挂起>", Scope = "member", Target = "~M:Niacomsoft.Eips.Data.Common.Database.Commit(System.Data.IDbTransaction)")]
+[assembly: SuppressMessage("Design", "Ex0200:Member is documented as throwing exception not documented on member in base or interface type", Justification = "<挂起>", Scope = "member", Target = "~M:Niacomsoft.Eips.Data.Common.Database.Rollback(System.Data.IDbTransaction)")]
